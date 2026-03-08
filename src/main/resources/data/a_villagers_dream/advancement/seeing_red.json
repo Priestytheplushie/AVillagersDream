@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:ruby"
+    },
+    "title": {
+      "translate": "advancements.seeing_red.title"
+    },
+    "description": {
+      "translate": "advancements.seeing_red.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "seeing_red_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:lost_to_time"
+}

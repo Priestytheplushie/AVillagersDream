@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:hay_block"
+    },
+    "title": {
+      "translate": "advancements.emerald_in_a_haystack.title"
+    },
+    "description": {
+      "translate": "advancements.emerald_in_a_haystack.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "emerald_in_a_haystack_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:emerald_in_the_rough"
+}

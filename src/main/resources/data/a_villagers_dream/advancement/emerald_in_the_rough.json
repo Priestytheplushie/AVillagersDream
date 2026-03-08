@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:deepslate_emerald_ore"
+    },
+    "title": {
+      "translate": "advancements.emerald_in_the_rough.title"
+    },
+    "description": {
+      "translate": "advancements.emerald_in_the_rough.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "emerald_in_the_rough_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:emerald_rush_achivement"
+}

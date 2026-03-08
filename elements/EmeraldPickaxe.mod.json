@@ -1,0 +1,54 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "sprite-0004.2_360x360-removebg-preview",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Emerald Pickaxe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Has a §a20% §7chance to grant §aEmerald",
+        "§aRush §7when breaking blocks, granting",
+        "§7haste and a chance to find Emeralds",
+        "§7while breaking any block."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:AVillagersDream"
+      }
+    ],
+    "efficiency": 7.0,
+    "attackSpeed": 1.6,
+    "enchantability": 14,
+    "damageVsEntity": 4.0,
+    "usageCount": 250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:EmeraldIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "EmeraldPickaxeBlockDestroyedWithTool"
+    }
+  }
+}

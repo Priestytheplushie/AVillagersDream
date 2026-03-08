@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:emerald_shovel"
+    },
+    "title": {
+      "translate": "advancements.rich_soil.title"
+    },
+    "description": {
+      "translate": "advancements.rich_soil.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rich_soil_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "a_villagers_dream:emerald_shovel"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "a_villagers_dream:better_than_iron"
+}

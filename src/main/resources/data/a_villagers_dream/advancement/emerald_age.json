@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:emerald_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.emerald_age.title"
+    },
+    "description": {
+      "translate": "advancements.emerald_age.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "emerald_age_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "a_villagers_dream:emerald_pickaxe"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "a_villagers_dream:better_than_iron"
+}

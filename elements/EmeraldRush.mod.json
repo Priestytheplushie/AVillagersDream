@@ -1,0 +1,36 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Emerald Rush",
+    "icon": "sprite-0004.2_360x360-removebg-preview",
+    "color": {
+      "value": -16711783,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": "entity.villager.celebrate"
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": 0.05,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "BLOCK_BREAK_SPEED"
+        },
+        "amount": 0.1,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
+  }
+}

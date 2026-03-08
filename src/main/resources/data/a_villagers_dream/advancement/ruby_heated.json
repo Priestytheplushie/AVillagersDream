@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:ruby"
+    },
+    "title": {
+      "translate": "advancements.ruby_heated.title"
+    },
+    "description": {
+      "translate": "advancements.ruby_heated.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ruby_heated_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:hotter_topic"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:ruby_emerald"
+    },
+    "title": {
+      "translate": "advancements.false_friends.title"
+    },
+    "description": {
+      "translate": "advancements.false_friends.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "false_friends_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:a_villagers_dream_root"
+}

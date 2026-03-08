@@ -1,0 +1,55 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "emerald_hoe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Emerald Hoe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Right-Click any crop to instantly harvest",
+        "§7a §a3x3§7 area of crops. Shift-Right-Click to",
+        "§7till a §a3x3§7 chunk of dirt into farmland. Using",
+        "§7either ability has a chance to drop §aEmerald",
+        "§aNuggets §7on harvest."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:AVillagersDream"
+      }
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 3.0,
+    "enchantability": 2,
+    "damageVsEntity": 1.0,
+    "usageCount": 250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:EmeraldIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "EmeraldHoeHarvest"
+    }
+  }
+}

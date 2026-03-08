@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT License"
+
+[[mods]]
+modId="a_villagers_dream"
+version="0.3.1"
+displayName="A Villager's Dream"
+displayURL="https://priesty.com"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Priesty & Garlic"
+description="Discover the Emerald Revelation"
+enumExtensions="META-INF/enumextensions.json"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+[[dependencies.a_villagers_dream]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.190,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.a_villagers_dream]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

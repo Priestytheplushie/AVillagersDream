@@ -1,0 +1,1886 @@
+{
+  "mod_elements": [
+    {
+      "name": "EmeraldSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldSwordItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_pickaxe.json",
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldPickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldPickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_pickaxe_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldPickaxeBlockDestroyedWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AVillagersDream",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_villagers_dream",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "EmeraldSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldRush",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_rush",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/potion/EmeraldRushMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldRushEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_rush_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldRushEffectProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldAxeItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldAxeRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_axe_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldAxeRightclickedOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldUpgrade",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldUpgradeItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_upgrade.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldSwordUpgrade",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_sword_upgrade.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_sword_upgrade.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldAxeUpgrade",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_axe_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_axe_upgrade.json",
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_axe_upgrade.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldPickaxeUpgrade",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_pickaxe_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_pickaxe_upgrade.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_pickaxe_upgrade.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldUpgradeDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_upgrade_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_upgrade_duplicate.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_upgrade_duplicate.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_ingot.json",
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Emeraldsmith",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emeraldsmith",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/a_villagers_dream/textures/entity/villager/profession/emeraldsmith.png.mcmeta"
+        ]
+      }
+    },
+    {
+      "name": "AVillagersDreamRoot",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_villagers_dream_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/a_villagers_dream_root.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldRefinery",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_refinery",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/emerald_refinery.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Priesty",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "priesty",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/entity/PriestyEntity.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/priesty_spawn_egg.json",
+          "src/main/java/net/mcreator/avillagersdream/client/renderer/PriestyRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "PriestySecret",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "priesty_secret",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/priesty_secret.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldAge",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_age",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/emerald_age.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PriestyEasterEgg",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "priesty_easter_egg",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/PriestyEasterEggProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Ruby",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/RubyItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/ruby.json"
+        ]
+      }
+    },
+    {
+      "name": "LostToTime",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lost_to_time",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/lost_to_time.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "SharpenedByGreed",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharpened_by_greed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/sharpened_by_greed.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "BladeOfIllagersBane",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blade_of_illagers_bane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/blade_of_illagers_bane.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "BetterThanIron",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_than_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/better_than_iron.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "RubyOnRails",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_on_rails",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/ruby_on_rails.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldRushAchivement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_rush_achivement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/emerald_rush_achivement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "MoneyDoesGrowOnTrees",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_does_grow_on_trees",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/money_does_grow_on_trees.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "SpoilsOfWar",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spoils_of_war",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/spoils_of_war.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "RubyLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/RubyLivingEntityIsHitWithItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SeeingRed",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seeing_red",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/seeing_red.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "RubyExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_extension",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HerosWill",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heros_will",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/heros_will.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldSwordRaidBuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword_raid_buff",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldSwordRaidBuffProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldHoeItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldHoeHarvest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_hoe_harvest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldHoeHarvestProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldNugget",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_nugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldNuggetItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_nugget.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldIngotRecipeNuggets",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_ingot_recipe_nuggets",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_ingot_recipe_nuggets.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_ingot_recipe_nuggets.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldNuggetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_nugget_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_nugget_recipe.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_nugget_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BitsNPieces",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bits_n_pieces",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/bits_n_pieces.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldInTheRough",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_in_the_rough",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/emerald_in_the_rough.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldInAHaystack",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_in_a_haystack",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/emerald_in_a_haystack.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ReapingTheRewards",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaping_the_rewards",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/reaping_the_rewards.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "AutomaticOverdrive",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatic_overdrive",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/automatic_overdrive.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FieldsOfFortune",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fields_of_fortune",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/fields_of_fortune.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PeakEfficency",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peak_efficency",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/peak_efficency.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "JackOfAllTrades",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jack_of_all_trades",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/jack_of_all_trades.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_hoe_recipe.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_shovel.json",
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldShovelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RichSoil",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rich_soil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/rich_soil.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Retribution",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retribution",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/retribution.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldShovelAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_shovel_ability",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldShovelAbilityProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DirtyMoney",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirty_money",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/dirty_money.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "RubyFurnaceGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/network/RubyFurnaceGUISlotMessage.java",
+          "src/main/java/net/mcreator/avillagersdream/world/inventory/RubyFurnaceGUIMenu.java",
+          "src/main/java/net/mcreator/avillagersdream/client/gui/RubyFurnaceGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "RubyFurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/loot_table/blocks/ruby_furnace.json",
+          "src/main/java/net/mcreator/avillagersdream/block/RubyFurnaceBlock.java",
+          "src/main/java/net/mcreator/avillagersdream/block/entity/RubyFurnaceBlockEntity.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/ruby_furnace.json",
+          "src/main/resources/assets/a_villagers_dream/models/block/ruby_furnace.json",
+          "src/main/resources/assets/a_villagers_dream/blockstates/ruby_furnace.json"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "RubyFurnaceOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/RubyFurnaceOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "FurnaceFlameProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_flame_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/FurnaceFlameProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "RubyFurnaceGUIFlameValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_gui_flame_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/RubyFurnaceGUIFlameValueProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "FurnaceArrow1Procedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_arrow_1_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/FurnaceArrow1ProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "FurnaceArrow2Procedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_arrow_2_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/FurnaceArrow2ProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "RubyFurnaceGUIArrow1Tooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_gui_arrow_1_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/RubyFurnaceGUIArrow1TooltipProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "RubyFurnaceGUIArrow2Tooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_gui_arrow_2_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/RubyFurnaceGUIArrow2TooltipProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "RubyFurnaceXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_xp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "slot",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/RubyFurnaceXPProcedure.java"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "HotterTopic",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hotter_topic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/hotter_topic.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "RubyHeated",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_heated",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/ruby_heated.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "MaximumThroughput",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maximum_throughput",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/maximum_throughput.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_ingot_recipe.json",
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_ingot_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyBartering",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_bartering",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/loot_table/gameplay/villagers.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyEmerald",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_emerald",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/RubyEmeraldItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/ruby_emerald.json"
+        ]
+      }
+    },
+    {
+      "name": "DisguisedIllager",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disguised_illager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/client/renderer/DisguisedIllagerRenderer.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/disguised_illager_spawn_egg.json",
+          "src/main/resources/data/a_villagers_dream/neoforge/biome_modifier/disguised_illager_biome_modifier.json",
+          "src/main/java/net/mcreator/avillagersdream/entity/DisguisedIllagerEntity.java"
+        ]
+      },
+      "path": "~/Disguised Illager"
+    },
+    {
+      "name": "DisguisedIllagerTransform",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disguised_illager_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/DisguisedIllagerTransformProcedure.java"
+        ]
+      },
+      "path": "~/Disguised Illager"
+    },
+    {
+      "name": "DisguisedIllagerSpawnLocation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disguised_illager_spawn_location",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/DisguisedIllagerSpawnLocationProcedure.java"
+        ]
+      },
+      "path": "~/Disguised Illager"
+    },
+    {
+      "name": "DisguisedIllagerAgitationCooldown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disguised_illager_agitation_cooldown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/DisguisedIllagerAgitationCooldownProcedure.java"
+        ]
+      },
+      "path": "~/Disguised Illager"
+    },
+    {
+      "name": "DisguisedIllagerPlayerAgitation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disguised_illager_player_agitation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/DisguisedIllagerPlayerAgitationProcedure.java"
+        ]
+      },
+      "path": "~/Disguised Illager"
+    },
+    {
+      "name": "RubyFurnaceOn",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_on",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/a_villagers_dream/models/block/ruby_furnace_on_blockstate_0.json"
+        ]
+      },
+      "path": "~/Ruby Furnace"
+    },
+    {
+      "name": "Investigate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "investigate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/InvestigateProcedure.java"
+        ]
+      },
+      "path": "~/Disguised Illager"
+    },
+    {
+      "name": "FalseFriends",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "false_friends",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/false_friends.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "SmokeAndMirrors",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_and_mirrors",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/smoke_and_mirrors.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PrivateEye",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "private_eye",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/private_eye.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "UnderTheLens",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_the_lens",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/under_the_lens.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Scout",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/client/renderer/ScoutRenderer.java",
+          "src/main/java/net/mcreator/avillagersdream/entity/ScoutEntity.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/scout_spawn_egg.json"
+        ]
+      },
+      "path": "~/Scout"
+    },
+    {
+      "name": "ScoutOnTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scout_on_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/ScoutOnTickProcedure.java"
+        ]
+      },
+      "path": "~/Scout"
+    },
+    {
+      "name": "ScoutSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scout_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/ScoutSpawnProcedure.java"
+        ]
+      },
+      "path": "~/Scout"
+    },
+    {
+      "name": "ScoutInterupt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scout_interupt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/ScoutInteruptProcedure.java"
+        ]
+      },
+      "path": "~/Scout"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "EmeraldRushTriggers",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "EmeraldNuggetsFromHoe",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "AutomaticOverdrive",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpiesCaughtInARow",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:EmeraldSword"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:EmeraldPickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:EmeraldAxe"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:EmeraldHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:EmeraldShovel"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:RubyFurnace"
+    ],
+    "ENTITIES:minecraft:raiders": [
+      "~CUSTOM:Scout"
+    ],
+    "ENTITIES:minecraft:illager": [
+      "~CUSTOM:Scout"
+    ]
+  },
+  "tab_element_order": {
+    "TOOLS": [
+      "EmeraldAxe",
+      "EmeraldPickaxe",
+      "EmeraldHoe",
+      "EmeraldShovel"
+    ],
+    "CUSTOM:AVillagersDream": [
+      "EmeraldSword",
+      "EmeraldPickaxe",
+      "EmeraldAxe",
+      "EmeraldHoe",
+      "EmeraldShovel",
+      "EmeraldUpgrade",
+      "EmeraldIngot",
+      "Ruby",
+      "EmeraldNugget",
+      "RubyFurnace",
+      "DisguisedIllager"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.a_villagers_dream.emerald_sword": "Emerald Sword",
+      "item.a_villagers_dream.emerald_pickaxe": "Emerald Pickaxe",
+      "item_group.a_villagers_dream.a_villagers_dream": "A Villager\u0027s Dream",
+      "item.a_villagers_dream.emerald_sword.description_0": "§7The blade of Illager\u0027s bane. Deals",
+      "item.a_villagers_dream.emerald_sword.description_2": "§cStrength II§7 during Raids.",
+      "item.a_villagers_dream.emerald_sword.description_1": "§7double damage to Illagers. Grants",
+      "effect.a_villagers_dream.emerald_rush": "Emerald Rush",
+      "item.a_villagers_dream.emerald_pickaxe.description_0": "§7Has a §a20% §7chance to grant §aEmerald",
+      "item.a_villagers_dream.emerald_pickaxe.description_3": "§7while breaking any block.",
+      "item.a_villagers_dream.emerald_pickaxe.description_1": "§aRush §7when breaking blocks, granting",
+      "item.a_villagers_dream.emerald_pickaxe.description_2": "§7haste and a chance to find Emeralds",
+      "item.a_villagers_dream.emerald_axe": "Emerald Axe",
+      "item.a_villagers_dream.emerald_axe.description_1": "§7turn into Emerald Ore. §7The chance",
+      "item.a_villagers_dream.emerald_axe.description_0": "§7Stripping logs has a §a10%§7 chance to",
+      "item.a_villagers_dream.emerald_axe.description_2": "§atriples §7while in a Village and is §a100%",
+      "item.a_villagers_dream.emerald_axe.description_3": "§7with §aHero of the Village§7. Stripping",
+      "item.a_villagers_dream.emerald_axe.description_4": "§7logs costs a high amount of durability.",
+      "item.a_villagers_dream.emerald_upgrade.description_3": " §9Iron Equipment",
+      "item.a_villagers_dream.emerald_upgrade.description_2": "§7Applies to:",
+      "item.a_villagers_dream.emerald_upgrade.description_5": "§9 Emerald",
+      "item.a_villagers_dream.emerald_upgrade.description_4": "§7Ingredients:",
+      "item.a_villagers_dream.emerald_upgrade.description_1": "",
+      "item.a_villagers_dream.emerald_upgrade.description_0": "§7Emerald Upgrade",
+      "item.a_villagers_dream.emerald_upgrade": "Smithing Template",
+      "item.a_villagers_dream.emerald_ingot": "Emerald Ingot",
+      "entity.minecraft.villager.a_villagers_dream.emeraldsmith": "Emeraldsmith",
+      "advancements.a_villagers_dream_root.title": "A Villager\u0027s Dream",
+      "advancements.a_villagers_dream_root.descr": "The begining of the Emerald revelation!",
+      "advancements.emerald_refinery.descr": "Stronger than Steel. Smelt a Emerald Ingot",
+      "advancements.emerald_refinery.title": "Emerald Refinery",
+      "entity.a_villagers_dream.priesty": "Priesty",
+      "item.a_villagers_dream.priesty_spawn_egg": "Priesty Spawn Egg",
+      "advancements.priesty_secret.descr": "Discover Priesty",
+      "advancements.priesty_secret.title": "Priesty?",
+      "advancements.emerald_age.title": "Emerald Age",
+      "advancements.emerald_age.descr": "Upgrade your Pickaxe once more",
+      "item.a_villagers_dream.emerald_sword.description_3": "§7a parry.",
+      "item.a_villagers_dream.ruby": "Ruby",
+      "advancements.lost_to_time.descr": "Discover a Ruby",
+      "advancements.lost_to_time.title": "Lost to Time",
+      "advancements.sharpened_by_greed.descr": "Upgrade your Axe into a Emerald Axe",
+      "advancements.sharpened_by_greed.title": "Sharpened by Greed",
+      "advancements.blade_of_illagers_bane.title": "Blade of Illager\u0027s Bane",
+      "advancements.blade_of_illagers_bane.descr": "Upgrade your Sword into a Emerald Sword",
+      "advancements.better_than_iron.descr": "Obtain a Emerald Upgrade from a Emeraldsmith",
+      "advancements.better_than_iron.title": "Better than Iron",
+      "advancements.ruby_on_rails.descr": "\"Compress the complexity of modern web apps\"",
+      "advancements.ruby_on_rails.title": "Ruby on Rails",
+      "advancements.emerald_rush_achivement.title": "Emerald Rush",
+      "advancements.emerald_rush_achivement.descr": "Trigger a Emerald Rush with your Pickaxe",
+      "advancements.money_does_grow_on_trees.title": "Money Does Grow on Trees!",
+      "advancements.money_does_grow_on_trees.descr": "Strip any log with a Emerald Axe into a Deepslate Emerald Ore",
+      "advancements.spoils_of_war.title": "Spoils of War",
+      "advancements.spoils_of_war.descr": "Strip a log with your Emerald Axe while under the effect of Hero of the Village",
+      "advancements.seeing_red.title": "Seeing Red",
+      "advancements.seeing_red.descr": "Unleash the latent heat inside...",
+      "advancements.heros_will.descr": "Wield a Emerald Sword during a Raid",
+      "advancements.heros_will.title": "Hero\u0027s Will",
+      "item.a_villagers_dream.emerald_hoe": "Emerald Hoe",
+      "item.a_villagers_dream.emerald_hoe.description_0": "§7Right-Click any crop to instantly harvest",
+      "item.a_villagers_dream.emerald_hoe.description_1": "§7a §a3x3§7 area of crops. Shift-Right-Click to",
+      "item.a_villagers_dream.emerald_hoe.description_2": "§7till a §a3x3§7 chunk of dirt into farmland. Using",
+      "item.a_villagers_dream.emerald_hoe.description_3": "§7either ability has a chance to drop §aEmerald",
+      "item.a_villagers_dream.emerald_hoe.description_4": "§aNuggets §7on harvest.",
+      "item.a_villagers_dream.emerald_nugget": "Emerald Nugget",
+      "advancements.bits_n_pieces.descr": "Obtain a Emerald Nugget",
+      "advancements.bits_n_pieces.title": "Bits \u0027n Pieces",
+      "advancements.emerald_in_the_rough.title": "Emerald in the Rough",
+      "advancements.emerald_in_the_rough.descr": "Collect 1 stack of Emeralds while under the effect of Emerald Rush",
+      "advancements.emerald_in_a_haystack.descr": "Collect 3 stacks of Emeralds while under the effect of Emerald Rush",
+      "advancements.emerald_in_a_haystack.title": "Emerald in a Haystack",
+      "advancements.reaping_the_rewards.descr": "Collect 9 Emerald Shards by harvesting with your Emerald Hoe",
+      "advancements.reaping_the_rewards.title": "Reaping the Rewards",
+      "advancements.automatic_overdrive.descr": "Harvest a 16x16 chunk of crops using your Emerald Hoe",
+      "advancements.automatic_overdrive.title": "Automatic Overdrive",
+      "advancements.fields_of_fortune.descr": "Upgrade your Iron Hoe into a Emerald Hoe",
+      "advancements.fields_of_fortune.title": "Fields of Fortune",
+      "advancements.peak_efficency.descr": "Till out a 3x3 sqaure of land with your Emerald Hoe",
+      "advancements.peak_efficency.title": "Peak Efficency",
+      "advancements.jack_of_all_trades.descr": "Collect a full set of Emerald Tools",
+      "advancements.jack_of_all_trades.title": "Jack of all Trades",
+      "item.a_villagers_dream.emerald_shovel": "Emerald Shovel",
+      "advancements.rich_soil.descr": "Upgrade your Shovel into a Emerald Shovel",
+      "advancements.rich_soil.title": "Rich Soil",
+      "advancements.retribution.descr": "Defeat a Illager with your Emerald Sword",
+      "advancements.retribution.title": "Retribution",
+      "advancements.dirty_money.title": "Dirty Money",
+      "advancements.dirty_money.descr": "Dig up a Emerald Ore while clearing a path with your Emerald Shovel",
+      "gui.a_villagers_dream.ruby_furnace_gui.label_ruby_furnace": "Ruby Furnace",
+      "gui.a_villagers_dream.ruby_furnace_gui.label_inventory": "Inventory",
+      "block.a_villagers_dream.ruby_furnace": "Ruby Furnace",
+      "advancements.hotter_topic.descr": "Craft a dual-input Ruby Furnace",
+      "advancements.hotter_topic.title": "Hotter Topic",
+      "advancements.ruby_heated.title": "Ruby-heated",
+      "advancements.ruby_heated.descr": "Ignite the furnace with a high-purity Ruby",
+      "advancements.maximum_throughput.descr": "Smelt two items at the exact same time.",
+      "advancements.maximum_throughput.title": "Maximum Throughput",
+      "item.a_villagers_dream.emerald_shovel.description_0": "§7Creating a path has a §a10%§7 chance",
+      "item.a_villagers_dream.emerald_shovel.description_3": "§7main-hand grants 1 §aEmerald§7.",
+      "item.a_villagers_dream.emerald_shovel.description_2": "§7stack of §aDirt§7 while this item is in the",
+      "item.a_villagers_dream.emerald_shovel.description_1": "§7to produce a Emerald Ore.",
+      "item.a_villagers_dream.ruby_emerald": "Ruby Emerald",
+      "entity.a_villagers_dream.disguised_illager": "Disguised Illager",
+      "item.a_villagers_dream.disguised_illager_spawn_egg": "Disguised Illager Spawn Egg",
+      "advancements.false_friends.title": "False Friend",
+      "advancements.false_friends.descr": "Sometimes, a smile is just a well-crafted mask.",
+      "advancements.smoke_and_mirrors.descr": "Shatter the glass to see the illusion behind the face.",
+      "advancements.smoke_and_mirrors.title": "Smoke and Mirrors",
+      "advancements.private_eye.title": "Private Eye",
+      "advancements.private_eye.descr": "Expose 10 pretenders through your lens without ever letting them see you coming.",
+      "advancements.under_the_lens.title": "Under The Lens",
+      "advancements.under_the_lens.descr": "Peer through the silver lens to find the rot within.",
+      "entity.a_villagers_dream.scout": "Scout",
+      "item.a_villagers_dream.scout_spawn_egg": "Scout Spawn Egg"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModScreens.java",
+      "src/main/java/net/mcreator/avillagersdream/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModMenus.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModFuels.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModMobEffects.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModVillagerProfessions.java",
+      "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModBlocks.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModBlockEntities.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModItems.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModEntities.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModEntityRenderers.java",
+      "src/main/java/net/mcreator/avillagersdream/AVillagersDreamMod.java",
+      "src/main/resources/META-INF/enumextensions.json",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModTabs.java",
+      "src/main/java/net/mcreator/avillagersdream/network/AVillagersDreamModVariables.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Ruby Furnace",
+        "children": []
+      },
+      {
+        "name": "Disguised Illager",
+        "children": []
+      },
+      {
+        "name": "Scout",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "a_villagers_dream",
+    "modName": "A Villager\u0027s Dream",
+    "version": "0.3.1-dev",
+    "description": "Discover the Emerald Revelation",
+    "author": "Priesty \u0026 Garlic",
+    "websiteURL": "https://priesty.com",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.avillagersdream"
+  },
+  "mcreatorVersion": 202500345720
+}

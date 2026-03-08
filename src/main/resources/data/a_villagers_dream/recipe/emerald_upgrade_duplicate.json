@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "a_villagers_dream:emerald_upgrade"
+    },
+    "c": {
+      "item": "a_villagers_dream:emerald_ingot"
+    }
+  },
+  "result": {
+    "id": "a_villagers_dream:emerald_upgrade",
+    "count": 2
+  }
+}

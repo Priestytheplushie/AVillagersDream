@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:emerald_shovel"
+    },
+    "title": {
+      "translate": "advancements.dirty_money.title"
+    },
+    "description": {
+      "translate": "advancements.dirty_money.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dirty_money_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:rich_soil"
+}

@@ -1,0 +1,16 @@
+{
+  "_fv": 79,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Emeraldsmith",
+    "pointOfInterest": {
+      "value": "Blocks.EMERALD_BLOCK"
+    },
+    "actionSound": {
+      "value": "entity.villager.work_weaponsmith"
+    },
+    "hat": "Full",
+    "professionTextureFile": "emeraldsmith.png",
+    "zombifiedProfessionTextureFile": "emeraldsmith.png"
+  }
+}

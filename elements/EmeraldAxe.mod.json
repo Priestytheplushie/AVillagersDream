@@ -1,0 +1,55 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "sprite-0008",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Emerald Axe",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Stripping logs has a §a10%§7 chance to",
+        "§7turn into Emerald Ore. §7The chance",
+        "§atriples §7while in a Village and is §a100%",
+        "§7with §aHero of the Village§7. Stripping",
+        "§7logs costs a high amount of durability."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:AVillagersDream"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.3,
+    "enchantability": 14,
+    "damageVsEntity": 9.0,
+    "usageCount": 250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:EmeraldIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "EmeraldAxeRightclickedOnBlock"
+    }
+  }
+}

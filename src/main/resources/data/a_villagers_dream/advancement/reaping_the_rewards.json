@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:emerald_nugget"
+    },
+    "title": {
+      "translate": "advancements.reaping_the_rewards.title"
+    },
+    "description": {
+      "translate": "advancements.reaping_the_rewards.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "reaping_the_rewards_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:automatic_overdrive"
+}

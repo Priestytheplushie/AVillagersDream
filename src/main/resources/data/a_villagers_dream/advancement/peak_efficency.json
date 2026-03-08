@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:farmland"
+    },
+    "title": {
+      "translate": "advancements.peak_efficency.title"
+    },
+    "description": {
+      "translate": "advancements.peak_efficency.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "peak_efficency_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:fields_of_fortune"
+}

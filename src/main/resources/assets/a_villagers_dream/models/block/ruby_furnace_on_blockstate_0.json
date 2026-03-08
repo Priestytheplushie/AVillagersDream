@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "a_villagers_dream:block/ruby_furnace_top",
+    "up": "a_villagers_dream:block/ruby_furnace_top",
+    "north": "a_villagers_dream:block/rubyfurnaceon",
+    "east": "a_villagers_dream:block/ruby_furnace_side",
+    "south": "a_villagers_dream:block/ruby_furnace_side",
+    "west": "a_villagers_dream:block/ruby_furnace_side",
+    "particle": "a_villagers_dream:block/ruby_furnace_top"
+  },
+  "render_type": "solid"
+}

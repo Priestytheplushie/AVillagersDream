@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:ruby_furnace"
+    },
+    "title": {
+      "translate": "advancements.maximum_throughput.title"
+    },
+    "description": {
+      "translate": "advancements.maximum_throughput.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "maximum_throughput_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:hotter_topic"
+}

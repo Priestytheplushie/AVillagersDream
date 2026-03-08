@@ -1,0 +1,36 @@
+{
+  "display": {
+    "background": "a_villagers_dream:textures/screens/emerald_ore.png",
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancements.a_villagers_dream_root.title"
+    },
+    "description": {
+      "translate": "advancements.a_villagers_dream_root.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "a_villagers_dream_root_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:emerald"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  }
+}

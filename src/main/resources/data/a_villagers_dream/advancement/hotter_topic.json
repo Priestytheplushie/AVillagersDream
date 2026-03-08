@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:ruby_furnace"
+    },
+    "title": {
+      "translate": "advancements.hotter_topic.title"
+    },
+    "description": {
+      "translate": "advancements.hotter_topic.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hotter_topic_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "a_villagers_dream:ruby_furnace"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "a_villagers_dream:lost_to_time"
+}

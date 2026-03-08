@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:emerald_hoe"
+    },
+    "title": {
+      "translate": "advancements.fields_of_fortune.title"
+    },
+    "description": {
+      "translate": "advancements.fields_of_fortune.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fields_of_fortune_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "a_villagers_dream:emerald_hoe"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "a_villagers_dream:better_than_iron"
+}

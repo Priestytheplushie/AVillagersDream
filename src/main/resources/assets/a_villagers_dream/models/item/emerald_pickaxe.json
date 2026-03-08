@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "a_villagers_dream:item/sprite-0004.2_360x360-removebg-preview"
+  }
+}

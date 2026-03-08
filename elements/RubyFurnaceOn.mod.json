@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "RubyFurnace",
+    "blockstateList": [
+      {
+        "texture": "ruby_furnace_top",
+        "textureTop": "ruby_furnace_top",
+        "textureLeft": "ruby_furnace_side",
+        "textureFront": "rubyfurnaceon",
+        "textureRight": "ruby_furnace_side",
+        "textureBack": "ruby_furnace_side",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 13,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

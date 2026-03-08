@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:emerald_sword"
+    },
+    "title": {
+      "translate": "advancements.heros_will.title"
+    },
+    "description": {
+      "translate": "advancements.heros_will.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heros_will_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:blade_of_illagers_bane"
+}

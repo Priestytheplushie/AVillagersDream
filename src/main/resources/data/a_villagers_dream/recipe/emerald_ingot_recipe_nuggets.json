@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "a_villagers_dream:emerald_nugget"
+    }
+  },
+  "result": {
+    "id": "a_villagers_dream:emerald_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald_ore"
+    },
+    "title": {
+      "translate": "advancements.emerald_rush_achivement.title"
+    },
+    "description": {
+      "translate": "advancements.emerald_rush_achivement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "emerald_rush_achivement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:emerald_age"
+}

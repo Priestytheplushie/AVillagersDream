@@ -1,0 +1,33 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:EmeraldIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.IRON_AXE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EmeraldIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:EmeraldUpgrade"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:EmeraldAxe"
+    },
+    "name": "emerald_axe_upgrade",
+    "namespace": "mod"
+  }
+}

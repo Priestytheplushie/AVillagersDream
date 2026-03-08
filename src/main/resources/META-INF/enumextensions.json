@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/world/entity/raid/Raid$RaiderType",
+      "name": "A_VILLAGERS_DREAM_SCOUT",
+      "constructor": "(Ljava/util/function/Supplier;[I)V",
+      "parameters": {
+        "class": "net/mcreator/avillagersdream/entity/ScoutEntity",
+        "field": "RAIDER_TYPE"
+      }
+    }
+  ]
+}

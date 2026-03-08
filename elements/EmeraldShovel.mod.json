@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "emeraldshovel",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Emerald Shovel",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Creating a path has a §a10%§7 chance",
+        "§7to produce a Emerald Ore."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:AVillagersDream"
+      }
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 1.3,
+    "enchantability": 14,
+    "damageVsEntity": 4.5,
+    "usageCount": 250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.EMERALD"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "EmeraldShovelAbility"
+    }
+  }
+}
