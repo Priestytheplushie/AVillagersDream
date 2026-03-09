@@ -5,7 +5,6 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -117,10 +116,7 @@ public class ScoutOnTickProcedure {
 						for (int index0 = 0; index0 < 3; index0++) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = EntityType.PILLAGER.spawn(_level,
-										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3,
-												world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mth.nextInt(RandomSource.create(), 0, 6) - 3, (int) (z + Mth.nextInt(RandomSource.create(), 0, 6) - 3)),
-												z + Mth.nextInt(RandomSource.create(), 0, 6) - 3),
-										MobSpawnType.MOB_SUMMONED);
+										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3, entity.getY() + Mth.nextInt(RandomSource.create(), 0, 2), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
 									entityToSpawn.setDeltaMovement(0, 0, 0);
 								}
@@ -128,9 +124,8 @@ public class ScoutOnTickProcedure {
 						}
 					} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 2) {
 						if (world instanceof ServerLevel _level) {
-							Entity entityToSpawn = EntityType.VINDICATOR.spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3,
-									world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mth.nextInt(RandomSource.create(), 0, 6) - 3, (int) (z + Mth.nextInt(RandomSource.create(), 0, 6) - 3)), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3),
-									MobSpawnType.MOB_SUMMONED);
+							Entity entityToSpawn = EntityType.VINDICATOR.spawn(_level,
+									BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3, entity.getY() + Mth.nextInt(RandomSource.create(), 0, 2), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3), MobSpawnType.MOB_SUMMONED);
 							if (entityToSpawn != null) {
 								entityToSpawn.setDeltaMovement(0, 0, 0);
 							}
@@ -138,10 +133,7 @@ public class ScoutOnTickProcedure {
 						for (int index1 = 0; index1 < 2; index1++) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = EntityType.PILLAGER.spawn(_level,
-										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3,
-												world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mth.nextInt(RandomSource.create(), 0, 6) - 3, (int) (z + Mth.nextInt(RandomSource.create(), 0, 6) - 3)),
-												z + Mth.nextInt(RandomSource.create(), 0, 6) - 3),
-										MobSpawnType.MOB_SUMMONED);
+										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3, entity.getY() + Mth.nextInt(RandomSource.create(), 0, 2), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
 									entityToSpawn.setDeltaMovement(0, 0, 0);
 								}
@@ -151,20 +143,16 @@ public class ScoutOnTickProcedure {
 						for (int index2 = 0; index2 < 3; index2++) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = EntityType.VINDICATOR.spawn(_level,
-										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3,
-												world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mth.nextInt(RandomSource.create(), 0, 6) - 3, (int) (z + Mth.nextInt(RandomSource.create(), 0, 6) - 3)),
-												z + Mth.nextInt(RandomSource.create(), 0, 6) - 3),
-										MobSpawnType.MOB_SUMMONED);
+										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3, entity.getY() + Mth.nextInt(RandomSource.create(), 0, 2), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
 									entityToSpawn.setDeltaMovement(0, 0, 0);
 								}
 							}
 						}
-					} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 4) {
+					} else if (Mth.nextInt(RandomSource.create(), 1, 4) >= 4) {
 						if (world instanceof ServerLevel _level) {
-							Entity entityToSpawn = EntityType.WITCH.spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3,
-									world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mth.nextInt(RandomSource.create(), 0, 6) - 3, (int) (z + Mth.nextInt(RandomSource.create(), 0, 6) - 3)), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3),
-									MobSpawnType.MOB_SUMMONED);
+							Entity entityToSpawn = EntityType.WITCH.spawn(_level,
+									BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3, entity.getY() + Mth.nextInt(RandomSource.create(), 0, 2), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3), MobSpawnType.MOB_SUMMONED);
 							if (entityToSpawn != null) {
 								entityToSpawn.setDeltaMovement(0, 0, 0);
 							}
@@ -172,10 +160,7 @@ public class ScoutOnTickProcedure {
 						for (int index3 = 0; index3 < 2; index3++) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = EntityType.VINDICATOR.spawn(_level,
-										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3,
-												world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mth.nextInt(RandomSource.create(), 0, 6) - 3, (int) (z + Mth.nextInt(RandomSource.create(), 0, 6) - 3)),
-												z + Mth.nextInt(RandomSource.create(), 0, 6) - 3),
-										MobSpawnType.MOB_SUMMONED);
+										BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 6) - 3, entity.getY() + Mth.nextInt(RandomSource.create(), 0, 2), z + Mth.nextInt(RandomSource.create(), 0, 6) - 3), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
 									entityToSpawn.setDeltaMovement(0, 0, 0);
 								}
@@ -209,6 +194,12 @@ public class ScoutOnTickProcedure {
 							}
 						}
 					}
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 120, 1, false, false));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 120, 1, false, false));
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.GLOWING);
 				}
 			}
 		}
