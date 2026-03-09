@@ -151,10 +151,10 @@
     "spawningCondition": {
       "name": "DisguisedIllagerSpawnLocation"
     },
-    "spawningProbability": 2,
+    "spawningProbability": 5,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

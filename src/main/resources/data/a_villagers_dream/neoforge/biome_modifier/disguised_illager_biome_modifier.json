@@ -5,8 +5,8 @@
   },
   "spawners": {
     "type": "a_villagers_dream:disguised_illager",
-    "weight": 2,
+    "weight": 5,
     "minCount": 1,
-    "maxCount": 2
+    "maxCount": 1
   }
 }

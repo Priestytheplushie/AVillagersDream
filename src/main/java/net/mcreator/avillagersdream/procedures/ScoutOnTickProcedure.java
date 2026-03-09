@@ -210,18 +210,6 @@ public class ScoutOnTickProcedure {
 						}
 					}
 				}
-			} else if (entity.getPersistentData().getDouble("chargeTimer") <= 0 && !(!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(24 / 2d), e -> true).isEmpty())) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 260, 1, false, false));
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 260, 2, false, false));
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack101 = new ItemStack(Blocks.AIR).copy();
-					_setstack101.setCount(1);
-					_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack101);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
 			}
 		}
 	}

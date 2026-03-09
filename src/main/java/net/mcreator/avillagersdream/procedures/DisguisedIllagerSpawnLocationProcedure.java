@@ -10,8 +10,8 @@ import net.mcreator.avillagersdream.entity.DisguisedIllagerEntity;
 
 public class DisguisedIllagerSpawnLocationProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if (world instanceof ServerLevel _level0 && _level0.isVillage(BlockPos.containing(x, y, z)) && Math.random() < 0.05
-				&& !world.getEntitiesOfClass(DisguisedIllagerEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(64 / 2d), e -> true).isEmpty()) {
+		if (world instanceof ServerLevel _level0 && _level0.isVillage(BlockPos.containing(x, y, z)) && Math.random() < 0.5
+				&& !(!world.getEntitiesOfClass(DisguisedIllagerEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(64 / 2d), e -> true).isEmpty())) {
 			return true;
 		}
 		return false;
