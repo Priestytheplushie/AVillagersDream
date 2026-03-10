@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/oak_planks",
+    "up": "a_villagers_dream:block/emerald_workbench_top",
+    "north": "a_villagers_dream:block/emerald_workbench_side",
+    "east": "a_villagers_dream:block/emerald_workbench_side",
+    "south": "a_villagers_dream:block/emerald_workbench_front",
+    "west": "a_villagers_dream:block/emerald_workbench_side",
+    "particle": "minecraft:block/oak_planks"
+  },
+  "render_type": "solid"
+}

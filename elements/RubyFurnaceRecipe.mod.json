@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "Blocks.BLAST_FURNACE"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RubyFurnace"
+    },
+    "name": "ruby_furnace_recipe",
+    "namespace": "mod"
+  }
+}

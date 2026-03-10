@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "a_villagers_dream:block/emerald_workbench"
+    },
+    "facing=east": {
+      "model": "a_villagers_dream:block/emerald_workbench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "a_villagers_dream:block/emerald_workbench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "a_villagers_dream:block/emerald_workbench",
+      "y": 270
+    }
+  }
+}

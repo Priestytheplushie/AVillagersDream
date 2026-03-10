@@ -31,6 +31,7 @@ public class AVillagersDreamModItems {
 	public static final DeferredItem<Item> RUBY_EMERALD;
 	public static final DeferredItem<Item> DISGUISED_ILLAGER_SPAWN_EGG;
 	public static final DeferredItem<Item> SCOUT_SPAWN_EGG;
+	public static final DeferredItem<Item> EMERALD_WORKBENCH;
 	static {
 		EMERALD_SWORD = REGISTRY.register("emerald_sword", EmeraldSwordItem::new);
 		EMERALD_PICKAXE = REGISTRY.register("emerald_pickaxe", EmeraldPickaxeItem::new);
@@ -46,6 +47,7 @@ public class AVillagersDreamModItems {
 		RUBY_EMERALD = REGISTRY.register("ruby_emerald", RubyEmeraldItem::new);
 		DISGUISED_ILLAGER_SPAWN_EGG = REGISTRY.register("disguised_illager_spawn_egg", () -> new DeferredSpawnEggItem(AVillagersDreamModEntities.DISGUISED_ILLAGER, -6724096, -16776961, new Item.Properties()));
 		SCOUT_SPAWN_EGG = REGISTRY.register("scout_spawn_egg", () -> new DeferredSpawnEggItem(AVillagersDreamModEntities.SCOUT, -10066330, -6710887, new Item.Properties()));
+		EMERALD_WORKBENCH = block(AVillagersDreamModBlocks.EMERALD_WORKBENCH);
 	}
 
 	// Start of user code block custom items

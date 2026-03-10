@@ -1702,6 +1702,71 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "RubyFurnaceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_furnace_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/ruby_furnace_recipe.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/ruby_furnace_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldsmithTrades",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emeraldsmith_trades",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "EmeraldWorkbench",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/loot_table/blocks/emerald_workbench.json",
+          "src/main/resources/assets/a_villagers_dream/models/block/emerald_workbench.json",
+          "src/main/java/net/mcreator/avillagersdream/block/EmeraldWorkbenchBlock.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_workbench.json",
+          "src/main/resources/assets/a_villagers_dream/blockstates/emerald_workbench.json"
+        ]
+      }
+    },
+    {
+      "name": "TheCuttingEdge",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_cutting_edge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/the_cutting_edge.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldWorkbenchRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_workbench_recipe.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_workbench_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1775,7 +1840,8 @@
       "Ruby",
       "EmeraldNugget",
       "RubyFurnace",
-      "DisguisedIllager"
+      "DisguisedIllager",
+      "EmeraldWorkbench"
     ]
   },
   "language_map": {
@@ -1899,7 +1965,10 @@
       "advancements.last_post.title": "Last Post",
       "advancements.last_post.descr": "Defeat a Scout",
       "advancements.fog_of_war.title": "Fog of War",
-      "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion."
+      "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion.",
+      "block.a_villagers_dream.emerald_workbench": "Emerald Workbench",
+      "advancements.the_cutting_edge.title": "The Cutting Edge",
+      "advancements.the_cutting_edge.descr": "Construct a Emerald Workbench for a Emeraldsmith"
     }
   },
   "metadata": {
@@ -1911,6 +1980,7 @@
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModMobEffects.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModVillagerProfessions.java",
       "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModTrades.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModBlocks.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModBlockEntities.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModItems.java",

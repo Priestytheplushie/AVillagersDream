@@ -4,7 +4,7 @@
   "definition": {
     "displayName": "Emeraldsmith",
     "pointOfInterest": {
-      "value": "Blocks.EMERALD_BLOCK"
+      "value": "CUSTOM:EmeraldWorkbench"
     },
     "actionSound": {
       "value": "entity.villager.work_weaponsmith"

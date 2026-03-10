@@ -1,0 +1,177 @@
+{
+  "_fv": 79,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:Emeraldsmith"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.COAL#0"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 24,
+            "offer": {
+              "value": "CUSTOM:Ruby"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 3,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.FLINT"
+            },
+            "countPrice1": 24,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 8,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.IRON_SHOVEL"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice2": 12,
+            "offer": {
+              "value": "CUSTOM:EmeraldShovel"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.IRON_INGOT"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 2,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "CUSTOM:Ruby"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:EmeraldUpgrade"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 7,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:Ruby"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.LAVA_BUCKET"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "Items.IRON_SWORD"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:EmeraldSword"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 1,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:Ruby"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 8,
+            "level": 4,
+            "maxTrades": 8,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 64,
+            "price2": {
+              "value": "CUSTOM:Ruby"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "CUSTOM:RubyFurnace"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 1,
+            "xp": 15,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

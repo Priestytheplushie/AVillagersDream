@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "a_villagers_dream:blocks/emerald_workbench",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "a_villagers_dream:emerald_workbench"
+        }
+      ]
+    }
+  ]
+}

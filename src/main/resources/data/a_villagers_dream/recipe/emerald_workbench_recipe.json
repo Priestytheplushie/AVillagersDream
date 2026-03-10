@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:emerald"
+    },
+    "b": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "id": "a_villagers_dream:emerald_workbench",
+    "count": 1
+  }
+}

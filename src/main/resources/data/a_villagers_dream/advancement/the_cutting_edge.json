@@ -1,27 +1,27 @@
 {
   "display": {
     "icon": {
-      "id": "a_villagers_dream:emerald_upgrade"
+      "id": "a_villagers_dream:emerald_workbench"
     },
     "title": {
-      "translate": "advancements.better_than_iron.title"
+      "translate": "advancements.the_cutting_edge.title"
     },
     "description": {
-      "translate": "advancements.better_than_iron.descr"
+      "translate": "advancements.the_cutting_edge.descr"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "better_than_iron_0": {
+    "the_cutting_edge_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "a_villagers_dream:emerald_upgrade"
+              "a_villagers_dream:emerald_workbench"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "a_villagers_dream:the_cutting_edge"
+  "parent": "a_villagers_dream:emerald_refinery"
 }

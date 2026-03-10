@@ -34,6 +34,7 @@ public class AVillagersDreamModTabs {
 				tabData.accept(AVillagersDreamModItems.EMERALD_NUGGET.get());
 				tabData.accept(AVillagersDreamModBlocks.RUBY_FURNACE.get().asItem());
 				tabData.accept(AVillagersDreamModItems.DISGUISED_ILLAGER_SPAWN_EGG.get());
+				tabData.accept(AVillagersDreamModBlocks.EMERALD_WORKBENCH.get().asItem());
 			}).build());
 
 	@SubscribeEvent

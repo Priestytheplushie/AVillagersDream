@@ -9,7 +9,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.ai.village.poi.PoiTypes;
@@ -34,7 +33,7 @@ import com.google.common.collect.ImmutableSet;
 public class AVillagersDreamModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(Registries.VILLAGER_PROFESSION, AVillagersDreamMod.MODID);
-	public static final DeferredHolder<VillagerProfession, VillagerProfession> EMERALDSMITH = registerProfession("emeraldsmith", () -> Blocks.EMERALD_BLOCK,
+	public static final DeferredHolder<VillagerProfession, VillagerProfession> EMERALDSMITH = registerProfession("emeraldsmith", () -> AVillagersDreamModBlocks.EMERALD_WORKBENCH.get(),
 			() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.villager.work_weaponsmith")));
 
 	private static DeferredHolder<VillagerProfession, VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {

@@ -118,5 +118,8 @@
   "advancements.last_post.title": "Last Post",
   "advancements.last_post.descr": "Defeat a Scout",
   "advancements.fog_of_war.title": "Fog of War",
-  "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion."
+  "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion.",
+  "block.a_villagers_dream.emerald_workbench": "Emerald Workbench",
+  "advancements.the_cutting_edge.title": "The Cutting Edge",
+  "advancements.the_cutting_edge.descr": "Construct a Emerald Workbench for a Emeraldsmith"
 }
