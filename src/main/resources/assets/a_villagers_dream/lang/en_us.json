@@ -112,5 +112,11 @@
   "advancements.under_the_lens.title": "Under The Lens",
   "advancements.under_the_lens.descr": "Peer through the silver lens to find the rot within.",
   "entity.a_villagers_dream.scout": "Scout",
-  "item.a_villagers_dream.scout_spawn_egg": "Scout Spawn Egg"
+  "item.a_villagers_dream.scout_spawn_egg": "Scout Spawn Egg",
+  "advancements.kill_the_messenger.descr": "Defeat a Scout before they can blow their horn",
+  "advancements.kill_the_messenger.title": "Kill the Messenger",
+  "advancements.last_post.title": "Last Post",
+  "advancements.last_post.descr": "Defeat a Scout",
+  "advancements.fog_of_war.title": "Fog of War",
+  "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion."
 }

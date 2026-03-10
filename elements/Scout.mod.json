@@ -5,7 +5,7 @@
     "mobName": "Scout",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "whistleblower_2.png",
+    "mobModelTexture": "scout_2.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -121,6 +121,9 @@
       "value": "entity.pillager.celebrate"
     },
     "entityDataEntries": [],
+    "whenMobDies": {
+      "name": "ScoutEntityDies"
+    },
     "whenMobIsHurt": {
       "name": "ScoutInterupt"
     },

@@ -17,6 +17,6 @@ public class ScoutRenderer extends HumanoidMobRenderer<ScoutEntity, HumanoidMode
 
 	@Override
 	public ResourceLocation getTextureLocation(ScoutEntity entity) {
-		return ResourceLocation.parse("a_villagers_dream:textures/entities/whistleblower_2.png");
+		return ResourceLocation.parse("a_villagers_dream:textures/entities/scout_2.png");
 	}
 }

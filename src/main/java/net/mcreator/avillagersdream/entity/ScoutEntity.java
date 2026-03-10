@@ -31,6 +31,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.avillagersdream.procedures.ScoutSpawnProcedure;
 import net.mcreator.avillagersdream.procedures.ScoutOnTickProcedure;
 import net.mcreator.avillagersdream.procedures.ScoutInteruptProcedure;
+import net.mcreator.avillagersdream.procedures.ScoutEntityDiesProcedure;
 import net.mcreator.avillagersdream.init.AVillagersDreamModEntities;
 
 import javax.annotation.Nullable;
@@ -97,6 +98,12 @@ public class ScoutEntity extends Raider {
 
 		ScoutInteruptProcedure.execute(world, x, y, z, entity);
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		ScoutEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

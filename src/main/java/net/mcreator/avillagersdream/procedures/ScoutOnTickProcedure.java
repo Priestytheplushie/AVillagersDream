@@ -11,6 +11,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Vindicator;
+import net.minecraft.world.entity.monster.Pillager;
+import net.minecraft.world.entity.monster.Illusioner;
+import net.minecraft.world.entity.monster.Evoker;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -69,48 +73,53 @@ public class ScoutOnTickProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (entity.getPersistentData().getDouble("chargeTimer") <= 0 && !world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(24 / 2d), e -> true).isEmpty()) {
-				entity.getPersistentData().putBoolean("isCharging", false);
-				entity.getPersistentData().putDouble("hornTimer", 300);
-				player = findEntityInWorldRange(world, Player.class, x, y, z, 16);
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.goat_horn.sound.2")), SoundSource.HOSTILE, 2, 1);
-					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.goat_horn.sound.2")), SoundSource.HOSTILE, 2, 1, false);
-					}
-				}
-				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-					ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
-					_setstack.setCount(1);
-					_modHandler.setStackInSlot(0, _setstack);
-				}
-				{
-					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-						if (entityiterator.getType().is(EntityTypeTags.ILLAGER)) {
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.bell.resonate")),
-											SoundSource.NEUTRAL, 2, 1);
-								} else {
-									_level.playLocalSound((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.bell.resonate")), SoundSource.NEUTRAL, 2, 1, false);
-								}
-							}
-							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false));
-							if (!(entityiterator instanceof ScoutEntity)) {
-								if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0, false, true));
-								if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, true));
-								buffed = buffed + 1;
-							}
-							if (entityiterator instanceof Mob _entity && player instanceof LivingEntity _ent)
-								_entity.setTarget(_ent);
+				entity.getPersistentData().putBoolean("usedHorn", true);
+				if (!world.getEntitiesOfClass(Pillager.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()
+						|| !world.getEntitiesOfClass(Vindicator.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()
+						|| !world.getEntitiesOfClass(Illusioner.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()
+						|| !world.getEntitiesOfClass(Evoker.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()) {
+					entity.getPersistentData().putBoolean("isCharging", false);
+					entity.getPersistentData().putDouble("hornTimer", 300);
+					player = findEntityInWorldRange(world, Player.class, x, y, z, 16);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.goat_horn.sound.2")), SoundSource.HOSTILE, 2, 1);
+						} else {
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.goat_horn.sound.2")), SoundSource.HOSTILE, 2, 1, false);
 						}
 					}
-				}
-				if (buffed == 0) {
+					if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
+						ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
+						_setstack.setCount(1);
+						_modHandler.setStackInSlot(0, _setstack);
+					}
+					{
+						final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
+						for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+							if (entityiterator.getType().is(EntityTypeTags.ILLAGER)) {
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.bell.resonate")),
+												SoundSource.NEUTRAL, 2, 1);
+									} else {
+										_level.playLocalSound((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.bell.resonate")), SoundSource.NEUTRAL, 2, 1,
+												false);
+									}
+								}
+								if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false));
+								if (!(entityiterator instanceof ScoutEntity)) {
+									if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0, false, true));
+									if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, true));
+								}
+								if (entityiterator instanceof Mob _entity && player instanceof LivingEntity _ent)
+									_entity.setTarget(_ent);
+							}
+						}
+					}
+				} else {
 					random = Mth.nextInt(RandomSource.create(), 1, 4);
 					if (Mth.nextInt(RandomSource.create(), 1, 4) == 1) {
 						for (int index0 = 0; index0 < 3; index0++) {
@@ -200,6 +209,7 @@ public class ScoutOnTickProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 120, 1, false, false));
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(MobEffects.GLOWING);
+					entity.getPersistentData().putDouble("hornTimer", 400);
 				}
 			}
 		}

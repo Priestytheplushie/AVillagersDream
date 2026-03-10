@@ -1628,6 +1628,80 @@
         ]
       },
       "path": "~/Scout"
+    },
+    {
+      "name": "KillTheMessenger",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_the_messenger",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/kill_the_messenger.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ScoutEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scout_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/ScoutEntityDiesProcedure.java"
+        ]
+      },
+      "path": "~/Scout"
+    },
+    {
+      "name": "LastPost",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "last_post",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/last_post.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FogOfWar",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fog_of_war",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/fog_of_war.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -1819,7 +1893,13 @@
       "advancements.under_the_lens.title": "Under The Lens",
       "advancements.under_the_lens.descr": "Peer through the silver lens to find the rot within.",
       "entity.a_villagers_dream.scout": "Scout",
-      "item.a_villagers_dream.scout_spawn_egg": "Scout Spawn Egg"
+      "item.a_villagers_dream.scout_spawn_egg": "Scout Spawn Egg",
+      "advancements.kill_the_messenger.descr": "Defeat a Scout before they can blow their horn",
+      "advancements.kill_the_messenger.title": "Kill the Messenger",
+      "advancements.last_post.title": "Last Post",
+      "advancements.last_post.descr": "Defeat a Scout",
+      "advancements.fog_of_war.title": "Fog of War",
+      "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion."
     }
   },
   "metadata": {
