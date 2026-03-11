@@ -71,6 +71,7 @@ public class AVillagersDreamModVariables {
 		clone.AutomaticOverdrive = original.AutomaticOverdrive;
 		clone.SpiesCaughtInARow = original.SpiesCaughtInARow;
 		if (!event.isWasDeath()) {
+			clone.EmeraldDebt = original.EmeraldDebt;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -81,6 +82,7 @@ public class AVillagersDreamModVariables {
 		public double EmeraldNuggetsFromHoe = 0;
 		public double AutomaticOverdrive = 0;
 		public double SpiesCaughtInARow = 0;
+		public double EmeraldDebt = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -89,6 +91,7 @@ public class AVillagersDreamModVariables {
 			nbt.putDouble("EmeraldNuggetsFromHoe", EmeraldNuggetsFromHoe);
 			nbt.putDouble("AutomaticOverdrive", AutomaticOverdrive);
 			nbt.putDouble("SpiesCaughtInARow", SpiesCaughtInARow);
+			nbt.putDouble("EmeraldDebt", EmeraldDebt);
 			return nbt;
 		}
 
@@ -98,6 +101,7 @@ public class AVillagersDreamModVariables {
 			EmeraldNuggetsFromHoe = nbt.getDouble("EmeraldNuggetsFromHoe");
 			AutomaticOverdrive = nbt.getDouble("AutomaticOverdrive");
 			SpiesCaughtInARow = nbt.getDouble("SpiesCaughtInARow");
+			EmeraldDebt = nbt.getDouble("EmeraldDebt");
 		}
 
 		public void markSyncDirty() {

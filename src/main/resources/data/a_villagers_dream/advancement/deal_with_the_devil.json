@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:ruby_emerald"
+    },
+    "title": {
+      "translate": "advancements.deal_with_the_devil.title"
+    },
+    "description": {
+      "translate": "advancements.deal_with_the_devil.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "deal_with_the_devil_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:bankrupt"
+}

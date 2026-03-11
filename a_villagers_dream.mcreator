@@ -1767,6 +1767,254 @@
           "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_workbench_recipe.json"
         ]
       }
+    },
+    {
+      "name": "EmeraldArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldArmorItem.java",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_armor_helmet.json",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_armor_chestplate.json",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_armor_leggings.json",
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_armor_boots.json"
+        ]
+      },
+      "path": "~/Emerald Armor"
+    },
+    {
+      "name": "EmeraldBarrierOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_barrier_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldBarrierOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Armor"
+    },
+    {
+      "name": "EmeraldBarrier",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_barrier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/potion/EmeraldBarrierMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldBarrierDamageBuffer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_barrier_damage_buffer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldBarrierDamageBufferProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Armor"
+    },
+    {
+      "name": "EmeraldArmorFullSetBonus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_armor_full_set_bonus",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldArmorFullSetBonusProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Armor"
+    },
+    {
+      "name": "CoverMeInEmeralds",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_me_in_emeralds",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/cover_me_in_emeralds.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "InfiniteCredit",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinite_credit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/infinite_credit.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PaidInFull",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paid_in_full",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/paid_in_full.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "MarketCrash",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "market_crash",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/market_crash.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Bankrupt",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bankrupt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/bankrupt.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "DealWithTheDevil",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deal_with_the_devil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/deal_with_the_devil.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_chestplate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_boots_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1792,6 +2040,12 @@
       "name": "SpiesCaughtInARow",
       "type": "number",
       "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "EmeraldDebt",
+      "type": "number",
+      "scope": "player_lifetime",
       "value": "0"
     }
   ],
@@ -1820,6 +2074,18 @@
     ],
     "ENTITIES:minecraft:illager": [
       "~CUSTOM:Scout"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:EmeraldArmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:EmeraldArmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:EmeraldArmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:EmeraldArmor.boots"
     ]
   },
   "tab_element_order": {
@@ -1841,7 +2107,9 @@
       "EmeraldNugget",
       "RubyFurnace",
       "DisguisedIllager",
-      "EmeraldWorkbench"
+      "EmeraldWorkbench",
+      "EmeraldArmor",
+      "Scout"
     ]
   },
   "language_map": {
@@ -1968,7 +2236,48 @@
       "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion.",
       "block.a_villagers_dream.emerald_workbench": "Emerald Workbench",
       "advancements.the_cutting_edge.title": "The Cutting Edge",
-      "advancements.the_cutting_edge.descr": "Construct a Emerald Workbench for a Emeraldsmith"
+      "advancements.the_cutting_edge.descr": "Construct a Emerald Workbench for a Emeraldsmith",
+      "item.a_villagers_dream.emerald_armor_helmet": "Emerald Helmet",
+      "item.a_villagers_dream.emerald_armor_leggings": "Emerald Leggings",
+      "item.a_villagers_dream.emerald_armor_boots": "Emerald Boots",
+      "item.a_villagers_dream.emerald_armor_chestplate": "Emerald Chestplate",
+      "effect.a_villagers_dream.emerald_barrier": "Emerald Barrier",
+      "item.a_villagers_dream.emerald_armor_helmet.description_3": "§7but converts shield damage into §cDebt",
+      "item.a_villagers_dream.emerald_armor_helmet.description_4": "§7which must be paid every §715 seconds",
+      "item.a_villagers_dream.emerald_armor_helmet.description_5": "§7or the armor suffers §cextreme damage§7.",
+      "item.a_villagers_dream.emerald_armor_helmet.description_0": "§aFull Set Bonus: Gilded Greed",
+      "item.a_villagers_dream.emerald_armor_helmet.description_1": "§7Grants an §aEmerald Barrier §7based on",
+      "item.a_villagers_dream.emerald_armor_helmet.description_2": "§7emeralds held, maxing at §a10 Hearts§7,",
+      "item.a_villagers_dream.emerald_armor_boots.description_3": "§7but converts shield damage into §cDebt",
+      "item.a_villagers_dream.emerald_armor_boots.description_4": "§7which must be paid every §715 seconds",
+      "item.a_villagers_dream.emerald_armor_boots.description_1": "§7Grants an §aEmerald Barrier §7based on",
+      "item.a_villagers_dream.emerald_armor_boots.description_2": "§7emeralds held, maxing at §a10 Hearts§7,",
+      "item.a_villagers_dream.emerald_armor_boots.description_5": "§7or the armor suffers §cextreme damage§7.",
+      "item.a_villagers_dream.emerald_armor_boots.description_0": "§aFull Set Bonus: Gilded Greed",
+      "item.a_villagers_dream.emerald_armor_leggings.description_1": "§7Grants an §aEmerald Barrier §7based on",
+      "item.a_villagers_dream.emerald_armor_leggings.description_0": "§aFull Set Bonus: Gilded Greed",
+      "item.a_villagers_dream.emerald_armor_leggings.description_5": "§7or the armor suffers §cextreme damage§7.",
+      "item.a_villagers_dream.emerald_armor_leggings.description_4": "§7which must be paid every §715 seconds",
+      "item.a_villagers_dream.emerald_armor_leggings.description_3": "§7but converts shield damage into §cDebt",
+      "item.a_villagers_dream.emerald_armor_leggings.description_2": "§7emeralds held, maxing at §a10 Hearts§7,",
+      "item.a_villagers_dream.emerald_armor_chestplate.description_5": "§7or the armor suffers §cextreme damage§7.",
+      "item.a_villagers_dream.emerald_armor_chestplate.description_3": "§7but converts shield damage into §cDebt",
+      "item.a_villagers_dream.emerald_armor_chestplate.description_4": "§7which must be paid every §715 seconds",
+      "item.a_villagers_dream.emerald_armor_chestplate.description_1": "§7Grants an §aEmerald Barrier §7based on",
+      "item.a_villagers_dream.emerald_armor_chestplate.description_2": "§7emeralds held, maxing at §a10 Hearts§7,",
+      "item.a_villagers_dream.emerald_armor_chestplate.description_0": "§aFull Set Bonus: Gilded Greed",
+      "advancements.cover_me_in_emeralds.title": "Cover Me In Emeralds",
+      "advancements.cover_me_in_emeralds.descr": "Equip a full set of Emerald Armor.",
+      "advancements.infinite_credit.title": "Infinite Credit",
+      "advancements.infinite_credit.descr": "Reach the maximum shield capacity of 10 hearts.",
+      "advancements.paid_in_full.descr": "Successfully pay a single debt of over 100 Emeralds.",
+      "advancements.paid_in_full.title": "Paid in Full",
+      "advancements.market_crash.descr": "Lose all 10 hearts of your Emerald Barrier in a single combat encounter.",
+      "advancements.market_crash.title": "Market Crash",
+      "advancements.bankrupt.title": "Chapter 11: Bankruptcy",
+      "advancements.bankrupt.descr": "Have your armor take damage because you were unable to pay your debt.",
+      "advancements.deal_with_the_devil.title": "Deal with the Devil",
+      "advancements.deal_with_the_devil.descr": "Accumulate 500 or more Emerald Debt in a single 15-second cycle."
     }
   },
   "metadata": {
@@ -2012,15 +2321,19 @@
       {
         "name": "Scout",
         "children": []
+      },
+      {
+        "name": "Emerald Armor",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "a_villagers_dream",
     "modName": "A Villager\u0027s Dream",
-    "version": "0.1.0-alpha",
+    "version": "0.2.0-alpha",
     "description": "Discover the Emerald Revelation",
-    "author": "Priesty \u0026 Garlic",
+    "author": "Priesty \u0026 i7sky20",
     "websiteURL": "https://priesty.com",
     "license": "MIT License",
     "serverSideOnly": false,

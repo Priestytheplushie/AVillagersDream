@@ -32,6 +32,10 @@ public class AVillagersDreamModItems {
 	public static final DeferredItem<Item> DISGUISED_ILLAGER_SPAWN_EGG;
 	public static final DeferredItem<Item> SCOUT_SPAWN_EGG;
 	public static final DeferredItem<Item> EMERALD_WORKBENCH;
+	public static final DeferredItem<Item> EMERALD_ARMOR_HELMET;
+	public static final DeferredItem<Item> EMERALD_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> EMERALD_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> EMERALD_ARMOR_BOOTS;
 	static {
 		EMERALD_SWORD = REGISTRY.register("emerald_sword", EmeraldSwordItem::new);
 		EMERALD_PICKAXE = REGISTRY.register("emerald_pickaxe", EmeraldPickaxeItem::new);
@@ -48,6 +52,10 @@ public class AVillagersDreamModItems {
 		DISGUISED_ILLAGER_SPAWN_EGG = REGISTRY.register("disguised_illager_spawn_egg", () -> new DeferredSpawnEggItem(AVillagersDreamModEntities.DISGUISED_ILLAGER, -6724096, -16776961, new Item.Properties()));
 		SCOUT_SPAWN_EGG = REGISTRY.register("scout_spawn_egg", () -> new DeferredSpawnEggItem(AVillagersDreamModEntities.SCOUT, -10066330, -6710887, new Item.Properties()));
 		EMERALD_WORKBENCH = block(AVillagersDreamModBlocks.EMERALD_WORKBENCH);
+		EMERALD_ARMOR_HELMET = REGISTRY.register("emerald_armor_helmet", EmeraldArmorItem.Helmet::new);
+		EMERALD_ARMOR_CHESTPLATE = REGISTRY.register("emerald_armor_chestplate", EmeraldArmorItem.Chestplate::new);
+		EMERALD_ARMOR_LEGGINGS = REGISTRY.register("emerald_armor_leggings", EmeraldArmorItem.Leggings::new);
+		EMERALD_ARMOR_BOOTS = REGISTRY.register("emerald_armor_boots", EmeraldArmorItem.Boots::new);
 	}
 
 	// Start of user code block custom items

@@ -35,12 +35,21 @@ public class AVillagersDreamModTabs {
 				tabData.accept(AVillagersDreamModBlocks.RUBY_FURNACE.get().asItem());
 				tabData.accept(AVillagersDreamModItems.DISGUISED_ILLAGER_SPAWN_EGG.get());
 				tabData.accept(AVillagersDreamModBlocks.EMERALD_WORKBENCH.get().asItem());
+				tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_HELMET.get());
+				tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_CHESTPLATE.get());
+				tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_LEGGINGS.get());
+				tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_BOOTS.get());
+				tabData.accept(AVillagersDreamModItems.SCOUT_SPAWN_EGG.get());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(AVillagersDreamModItems.EMERALD_SWORD.get());
+			tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_HELMET.get());
+			tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_CHESTPLATE.get());
+			tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_LEGGINGS.get());
+			tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(AVillagersDreamModItems.EMERALD_UPGRADE.get());
 			tabData.accept(AVillagersDreamModItems.RUBY.get());

@@ -1,0 +1,24 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Emerald Barrier",
+    "icon": "emeraldheart",
+    "color": {
+      "value": -16737997,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": "block.amethyst_block.resonate"
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "EmeraldBarrierOnEffectActiveTick"
+    }
+  }
+}

@@ -4,12 +4,12 @@ license="MIT License"
 
 [[mods]]
 modId="a_villagers_dream"
-version="0.1.0"
+version="0.2.0"
 displayName="A Villager's Dream"
 displayURL="https://priesty.com"
 logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="Priesty & Garlic"
+authors="Priesty & i7sky20"
 description="Discover the Emerald Revelation"
 enumExtensions="META-INF/enumextensions.json"
 

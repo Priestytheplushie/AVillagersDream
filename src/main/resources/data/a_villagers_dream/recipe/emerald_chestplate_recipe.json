@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "a_villagers_dream:emerald_upgrade"
+  },
+  "base": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "addition": {
+    "item": "a_villagers_dream:emerald_ingot"
+  },
+  "result": {
+    "id": "a_villagers_dream:emerald_armor_chestplate"
+  }
+}

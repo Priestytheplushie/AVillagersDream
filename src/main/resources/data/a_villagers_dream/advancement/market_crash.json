@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:red_candle"
+    },
+    "title": {
+      "translate": "advancements.market_crash.title"
+    },
+    "description": {
+      "translate": "advancements.market_crash.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "market_crash_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:cover_me_in_emeralds"
+}

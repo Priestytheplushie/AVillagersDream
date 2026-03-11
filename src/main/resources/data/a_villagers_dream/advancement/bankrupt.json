@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:charcoal"
+    },
+    "title": {
+      "translate": "advancements.bankrupt.title"
+    },
+    "description": {
+      "translate": "advancements.bankrupt.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bankrupt_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:market_crash"
+}

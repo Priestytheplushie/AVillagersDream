@@ -40,6 +40,9 @@
     "creativeTabs": [
       {
         "value": "MISC"
+      },
+      {
+        "value": "CUSTOM:AVillagersDream"
       }
     ],
     "isBoss": false,

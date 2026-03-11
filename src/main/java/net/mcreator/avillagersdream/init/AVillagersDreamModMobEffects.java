@@ -10,9 +10,11 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.avillagersdream.potion.EmeraldRushMobEffect;
+import net.mcreator.avillagersdream.potion.EmeraldBarrierMobEffect;
 import net.mcreator.avillagersdream.AVillagersDreamMod;
 
 public class AVillagersDreamModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, AVillagersDreamMod.MODID);
 	public static final DeferredHolder<MobEffect, MobEffect> EMERALD_RUSH = REGISTRY.register("emerald_rush", () -> new EmeraldRushMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> EMERALD_BARRIER = REGISTRY.register("emerald_barrier", () -> new EmeraldBarrierMobEffect());
 }
