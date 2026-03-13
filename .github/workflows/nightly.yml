@@ -16,38 +16,37 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    outputs:
-      should_run: ${{ steps.check_commits.outputs.should_run }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0 
+          fetch-depth: 0
 
-      - name: Check for meaningful changes
-        id: check_commits
+      - name: Set Runtime Variables
+        id: vars
         run: |
-          # Safe range detection
-          BEFORE="${{ github.event.before }}"
-          AFTER="${{ github.event.after }}"
+          echo "date=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
           
+          # Improved commit detection logic
+          BEFORE="${{ github.event.before }}"
+          # If it's a new branch or manual run, compare against previous commit
           if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || [ -z "$BEFORE" ]; then
             RANGE="HEAD~1..HEAD"
           else
-            RANGE="$BEFORE..$AFTER"
+            RANGE="$BEFORE..HEAD"
           fi
-
-          # The fix: --pretty comes before the range argument
-          VALID_COMMITS=$(git log --pretty=format:"%s" "$RANGE" | grep -vE "^(chore|docs|ci|test):" | wc -l)
           
-          if [ "$VALID_COMMITS" -eq "0" ]; then
-            echo "No code changes detected (only chores/docs). Skipping."
+          # Count commits that aren't just chores/docs
+          VALID_COMMITS=$(git log --pretty=format:"%s" "$RANGE" | grep -vE "^(chore|docs|ci|test):" | wc -l || echo 0)
+          
+          if [ "$VALID_COMMITS" -eq "0" ] && [ "${{ github.event_name }}" == "push" ]; then
             echo "should_run=false" >> $GITHUB_OUTPUT
           else
             echo "should_run=true" >> $GITHUB_OUTPUT
           fi
 
       - name: Set up JDK 21
-        if: steps.check_commits.outputs.should_run == 'true'
+        if: steps.vars.outputs.should_run == 'true'
         uses: actions/setup-java@v4
         with:
           java-version: '21'
@@ -55,19 +54,19 @@ jobs:
           cache: 'gradle'
 
       - name: Build with Gradle
-        if: steps.check_commits.outputs.should_run == 'true'
+        if: steps.vars.outputs.should_run == 'true'
         run: |
           chmod +x gradlew
           ./gradlew build
 
       - name: Prepare Artifacts
-        if: steps.check_commits.outputs.should_run == 'true'
+        if: steps.vars.outputs.should_run == 'true'
         run: |
           mkdir -p build/dist
           cp build/libs/*[0-9].jar build/dist/AVillagersDream-nightly.jar || cp build/libs/*.jar build/dist/AVillagersDream-nightly.jar
 
       - name: Generate Smart Changelog
-        if: steps.check_commits.outputs.should_run == 'true'
+        if: steps.vars.outputs.should_run == 'true'
         id: build_changelog
         uses: mikepenz/release-changelog-builder-action@v4
         with:
@@ -87,21 +86,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Refresh Nightly Tag
-        if: steps.check_commits.outputs.should_run == 'true'
+        if: steps.vars.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git tag -d nightly || true
+          git tag -f nightly # Use -f (force) to overwrite locally
           git push origin :refs/tags/nightly || true
-          git tag nightly
           git push origin nightly
 
       - name: Update Nightly Release
-        if: steps.check_commits.outputs.should_run == 'true'
+        if: steps.vars.outputs.should_run == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly
-          name: "🌙 Nightly Build - ${{ github.event.head_commit.timestamp }}"
+          name: "🌙 Nightly Build - ${{ steps.vars.outputs.date }}"
           body: |
             ### ⚠️ Experimental Build
             This build is automated and contains unpolished features. Use at your own risk!
