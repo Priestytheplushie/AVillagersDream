@@ -120,8 +120,6 @@
   "advancements.fog_of_war.title": "Fog of War",
   "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion.",
   "block.a_villagers_dream.emerald_workbench": "Emerald Workbench",
-  "advancements.the_cutting_edge.title": "The Cutting Edge",
-  "advancements.the_cutting_edge.descr": "Construct a Emerald Workbench for a Emeraldsmith",
   "item.a_villagers_dream.emerald_armor_helmet": "Emerald Helmet",
   "item.a_villagers_dream.emerald_armor_leggings": "Emerald Leggings",
   "item.a_villagers_dream.emerald_armor_boots": "Emerald Boots",
@@ -162,5 +160,13 @@
   "advancements.bankrupt.title": "Chapter 11: Bankruptcy",
   "advancements.bankrupt.descr": "Have your armor take damage because you were unable to pay your debt.",
   "advancements.deal_with_the_devil.title": "Deal with the Devil",
-  "advancements.deal_with_the_devil.descr": "Accumulate 500 or more Emerald Debt in a single 15-second cycle."
+  "advancements.deal_with_the_devil.descr": "Accumulate 500 or more Emerald Debt in a single 15-second cycle.",
+  "gui.a_villagers_dream.emerald_workbench_gui.Investment_prefix": "Risk ",
+  "gui.a_villagers_dream.emerald_workbench_gui.label_emerald_workbench": "Emerald Workbench",
+  "gui.a_villagers_dream.emerald_workbench_gui.label_quality_bulky": "Quality: Bulky",
+  "gui.a_villagers_dream.emerald_workbench_gui.label_investment": "Investment",
+  "gui.a_villagers_dream.emerald_workbench_gui.label_potency_low": "Potency: Low",
+  "gui.a_villagers_dream.emerald_workbench_gui.Investment_suffix": " Gems",
+  "advancements.green_collar_worker.title": "Green Collar Worker",
+  "advancements.green_collar_worker.descr": "Construct a Emerald Workbench to create new opportunities for you and your local Emeraldsmith"
 }

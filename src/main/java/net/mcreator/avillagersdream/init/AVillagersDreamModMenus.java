@@ -16,6 +16,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.avillagersdream.world.inventory.RubyFurnaceGUIMenu;
+import net.mcreator.avillagersdream.world.inventory.EmeraldWorkbenchGUIMenu;
 import net.mcreator.avillagersdream.network.MenuStateUpdateMessage;
 import net.mcreator.avillagersdream.AVillagersDreamMod;
 
@@ -24,6 +25,7 @@ import java.util.Map;
 public class AVillagersDreamModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, AVillagersDreamMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<RubyFurnaceGUIMenu>> RUBY_FURNACE_GUI = REGISTRY.register("ruby_furnace_gui", () -> IMenuTypeExtension.create(RubyFurnaceGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<EmeraldWorkbenchGUIMenu>> EMERALD_WORKBENCH_GUI = REGISTRY.register("emerald_workbench_gui", () -> IMenuTypeExtension.create(EmeraldWorkbenchGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
