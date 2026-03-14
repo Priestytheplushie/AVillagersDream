@@ -128,7 +128,7 @@
     "openGUIOnRightClick": true,
     "inventorySize": 3,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
+    "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [
       2

@@ -2117,26 +2117,6 @@
       "path": "~/Emerald Workbench"
     },
     {
-      "name": "EmeraldWorkbenchDisplayMods",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "emerald_workbench_display_mods",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldWorkbenchDisplayModsProcedure.java"
-        ]
-      },
-      "path": "~/Emerald Workbench"
-    },
-    {
       "name": "GreenCollarWorker",
       "type": "achievement",
       "compiles": true,
@@ -2145,6 +2125,86 @@
       "metadata": {
         "files": [
           "src/main/resources/data/a_villagers_dream/advancement/green_collar_worker.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldWorkbenchTransaction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_transaction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldWorkbenchTransactionProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "CalculateAttributeModifiers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calculate_attribute_modifiers",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/CalculateAttributeModifiersProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "TheArtOfTheDeal",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_art_of_the_deal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/the_art_of_the_deal.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "AllIn",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_in",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/all_in.json"
         ]
       },
       "path": "~/Advancements"
@@ -2221,15 +2281,10 @@
       "~CUSTOM:EmeraldArmor.boots"
     ],
     "ITEMS:mod:eligible_equipment": [
-      "CUSTOM:EmeraldSword",
-      "CUSTOM:EmeraldPickaxe",
-      "CUSTOM:EmeraldHoe",
-      "CUSTOM:EmeraldShovel",
-      "CUSTOM:EmeraldAxe",
-      "CUSTOM:EmeraldArmor.helmet",
-      "CUSTOM:EmeraldArmor.body",
-      "CUSTOM:EmeraldArmor.legs",
-      "CUSTOM:EmeraldArmor.boots"
+      "TAG:minecraft:swords",
+      "TAG:minecraft:axes",
+      "Items.TRIDENT",
+      "Items.MACE"
     ]
   },
   "tab_element_order": {
@@ -2420,14 +2475,19 @@
       "advancements.bankrupt.descr": "Have your armor take damage because you were unable to pay your debt.",
       "advancements.deal_with_the_devil.title": "Deal with the Devil",
       "advancements.deal_with_the_devil.descr": "Accumulate 500 or more Emerald Debt in a single 15-second cycle.",
-      "gui.a_villagers_dream.emerald_workbench_gui.Investment_prefix": "Risk ",
+      "gui.a_villagers_dream.emerald_workbench_gui.Investment_prefix": "Invest ",
       "gui.a_villagers_dream.emerald_workbench_gui.label_emerald_workbench": "Emerald Workbench",
       "gui.a_villagers_dream.emerald_workbench_gui.label_quality_bulky": "Quality: Bulky",
       "gui.a_villagers_dream.emerald_workbench_gui.label_investment": "Investment",
       "gui.a_villagers_dream.emerald_workbench_gui.label_potency_low": "Potency: Low",
       "gui.a_villagers_dream.emerald_workbench_gui.Investment_suffix": " Gems",
       "advancements.green_collar_worker.title": "Green Collar Worker",
-      "advancements.green_collar_worker.descr": "Construct a Emerald Workbench to create new opportunities for you and your local Emeraldsmith"
+      "advancements.green_collar_worker.descr": "Construct a Emerald Workbench to create new opportunities for you and your local Emeraldsmith",
+      "gui.a_villagers_dream.emerald_workbench_gui.tooltip_empty": "",
+      "advancements.the_art_of_the_deal.descr": "Obtain any item with an Emerald Quality",
+      "advancements.the_art_of_the_deal.title": "The Art of the Deal",
+      "advancements.all_in.title": "All in...",
+      "advancements.all_in.descr": "Invest 64 Emeralds into a Emerald Quality Upgrade"
     }
   },
   "metadata": {

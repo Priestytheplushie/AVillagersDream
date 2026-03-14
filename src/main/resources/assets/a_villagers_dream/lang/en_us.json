@@ -161,12 +161,17 @@
   "advancements.bankrupt.descr": "Have your armor take damage because you were unable to pay your debt.",
   "advancements.deal_with_the_devil.title": "Deal with the Devil",
   "advancements.deal_with_the_devil.descr": "Accumulate 500 or more Emerald Debt in a single 15-second cycle.",
-  "gui.a_villagers_dream.emerald_workbench_gui.Investment_prefix": "Risk ",
+  "gui.a_villagers_dream.emerald_workbench_gui.Investment_prefix": "Invest ",
   "gui.a_villagers_dream.emerald_workbench_gui.label_emerald_workbench": "Emerald Workbench",
   "gui.a_villagers_dream.emerald_workbench_gui.label_quality_bulky": "Quality: Bulky",
   "gui.a_villagers_dream.emerald_workbench_gui.label_investment": "Investment",
   "gui.a_villagers_dream.emerald_workbench_gui.label_potency_low": "Potency: Low",
   "gui.a_villagers_dream.emerald_workbench_gui.Investment_suffix": " Gems",
   "advancements.green_collar_worker.title": "Green Collar Worker",
-  "advancements.green_collar_worker.descr": "Construct a Emerald Workbench to create new opportunities for you and your local Emeraldsmith"
+  "advancements.green_collar_worker.descr": "Construct a Emerald Workbench to create new opportunities for you and your local Emeraldsmith",
+  "gui.a_villagers_dream.emerald_workbench_gui.tooltip_empty": "",
+  "advancements.the_art_of_the_deal.descr": "Obtain any item with an Emerald Quality",
+  "advancements.the_art_of_the_deal.title": "The Art of the Deal",
+  "advancements.all_in.title": "All in...",
+  "advancements.all_in.descr": "Invest 64 Emeralds into a Emerald Quality Upgrade"
 }

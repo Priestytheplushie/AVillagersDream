@@ -1,14 +1,15 @@
 {
   "replace": false,
   "values": [
-    "a_villagers_dream:emerald_shovel",
-    "a_villagers_dream:emerald_armor_boots",
-    "a_villagers_dream:emerald_armor_leggings",
-    "a_villagers_dream:emerald_sword",
-    "a_villagers_dream:emerald_armor_helmet",
-    "a_villagers_dream:emerald_hoe",
-    "a_villagers_dream:emerald_axe",
-    "a_villagers_dream:emerald_armor_chestplate",
-    "a_villagers_dream:emerald_pickaxe"
+    {
+      "id": "#minecraft:axes",
+      "required": false
+    },
+    "minecraft:trident",
+    {
+      "id": "#minecraft:swords",
+      "required": false
+    },
+    "minecraft:mace"
   ]
 }

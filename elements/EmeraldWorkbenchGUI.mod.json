@@ -43,9 +43,6 @@
           "onSlotChanged": {
             "name": "EmeraldWorkbenchSlot0"
           },
-          "onTakenFromSlot": {
-            "name": "EmeraldWorkbenchRemoveItem"
-          },
           "onStackTransfer": {
             "name": "EmeraldWorkbenchSlot0"
           },
@@ -71,12 +68,6 @@
           "onSlotChanged": {
             "name": "EmeraldWorkbenchSlot0"
           },
-          "onTakenFromSlot": {
-            "name": "EmeraldWorkbenchRemoveItem"
-          },
-          "onStackTransfer": {
-            "name": "EmeraldWorkbenchSlot0"
-          },
           "x": 157,
           "y": 55,
           "locked": false
@@ -90,7 +81,7 @@
           "max": 64.0,
           "value": 1.0,
           "step": 1.0,
-          "prefix": "Risk ",
+          "prefix": "Invest ",
           "suffix": " Gems",
           "whenSliderMoves": {
             "name": "EmeraldWorkbenchSlider"
@@ -110,6 +101,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "EmeraldWorkbenchTransaction"
+          },
           "x": 148,
           "y": 99,
           "locked": false
@@ -172,21 +166,6 @@
           },
           "x": 191,
           "y": 106,
-          "locked": false
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_emerald_workbench_display_m",
-          "text": {
-            "fixedValue": "",
-            "name": "EmeraldWorkbenchDisplayMods"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 228,
-          "y": 93,
           "locked": false
         }
       }

@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    "aba",
-    " a "
+    "aa",
+    "bb",
+    "bb"
   ],
   "key": {
     "a": {
-      "item": "minecraft:emerald"
+      "item": "minecraft:emerald_block"
     },
     "b": {
-      "item": "minecraft:crafting_table"
+      "tag": "minecraft:planks"
     }
   },
   "result": {

@@ -34,7 +34,7 @@ public class EmeraldWorkbenchGUIMenu extends AbstractContainerMenu implements AV
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 10)
+			if (!this.containsKey(key) && this.size() >= 9)
 				return null;
 			return super.put(key, value);
 		}
@@ -118,17 +118,17 @@ public class EmeraldWorkbenchGUIMenu extends AbstractContainerMenu implements AV
 				super.setChanged();
 				slotChanged(1, 0, 0);
 			}
-
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(1, 2, b.getCount() - a.getCount());
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 23, 63) {
 			private final int slot = 2;
 			private int x = EmeraldWorkbenchGUIMenu.this.x;
 			private int y = EmeraldWorkbenchGUIMenu.this.y;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(2, 1, stack.getCount());
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {

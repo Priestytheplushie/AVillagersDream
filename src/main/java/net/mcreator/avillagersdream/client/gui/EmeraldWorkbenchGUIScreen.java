@@ -14,12 +14,8 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.avillagersdream.world.inventory.EmeraldWorkbenchGUIMenu;
 import net.mcreator.avillagersdream.procedures.EmeraldWorkbenchQualityDisplayProcedure;
 import net.mcreator.avillagersdream.procedures.EmeraldWorkbenchPotencyProcedure;
-import net.mcreator.avillagersdream.procedures.EmeraldWorkbenchDisplayModsProcedure;
 import net.mcreator.avillagersdream.network.EmeraldWorkbenchGUISliderMessage;
 import net.mcreator.avillagersdream.init.AVillagersDreamModScreens;
-
-import java.util.stream.Collectors;
-import java.util.Arrays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -56,16 +52,7 @@ public class EmeraldWorkbenchGUIScreen extends AbstractContainerScreen<EmeraldWo
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		boolean customTooltipShown = false;
-		if (mouseX > leftPos + 102 && mouseX < leftPos + 126 && mouseY > topPos + 56 && mouseY < topPos + 80) {
-			String hoverText = EmeraldWorkbenchDisplayModsProcedure.execute(entity);
-			if (hoverText != null) {
-				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
-			}
-			customTooltipShown = true;
-		}
-		if (!customTooltipShown)
-			this.renderTooltip(guiGraphics, mouseX, mouseY);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override

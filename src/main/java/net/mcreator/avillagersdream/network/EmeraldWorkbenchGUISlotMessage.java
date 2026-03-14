@@ -15,6 +15,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.avillagersdream.procedures.EmeraldWorkbenchTransactionProcedure;
 import net.mcreator.avillagersdream.procedures.EmeraldWorkbenchSlot0Procedure;
 import net.mcreator.avillagersdream.AVillagersDreamMod;
 
@@ -62,10 +63,10 @@ public record EmeraldWorkbenchGUISlotMessage(int slotID, int x, int y, int z, in
 
 			EmeraldWorkbenchSlot0Procedure.execute(entity);
 		}
-		if (slot == 1 && changeType == 2) {
+		if (slot == 2 && changeType == 1) {
 			int amount = meta;
 
-			EmeraldWorkbenchSlot0Procedure.execute(entity);
+			EmeraldWorkbenchTransactionProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
