@@ -88,9 +88,49 @@ public class CalculateAttributeModifiersProcedure {
 								(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier1")), AttributeModifier.Operation.ADD_VALUE)),
 						equipmentSlot);
 				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.attack_speed")).get(), (new AttributeModifier(
-						ResourceLocation.parse(("a_villagers_dream:" + "bulky_slowness").toLowerCase(java.util.Locale.ENGLISH)),
+						ResourceLocation.parse(("a_villagers_dream:" + "heavy_slowness").toLowerCase(java.util.Locale.ENGLISH)),
 						(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2") - itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2") * 2),
 						AttributeModifier.Operation.ADD_VALUE)), equipmentSlot);
+			}
+			if ((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("emeraldQuality")).equals("Light")) {
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:player.block_break_speed")).get(),
+						(new AttributeModifier(ResourceLocation.parse(("a_villagers_dream:" + "light_mining").toLowerCase(java.util.Locale.ENGLISH)),
+								(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier1")), AttributeModifier.Operation.ADD_MULTIPLIED_BASE)),
+						equipmentSlot);
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.attack_damage")).get(), (new AttributeModifier(
+						ResourceLocation.parse(("a_villagers_dream:" + "light_damage").toLowerCase(java.util.Locale.ENGLISH)),
+						(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2") - itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2") * 2),
+						AttributeModifier.Operation.ADD_VALUE)), equipmentSlot);
+			}
+			if ((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("emeraldQuality")).equals("Vibrant")) {
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.luck")).get(),
+						(new AttributeModifier(ResourceLocation.parse(("a_villagers_dream:" + "vibrant_luck").toLowerCase(java.util.Locale.ENGLISH)),
+								(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier1")), AttributeModifier.Operation.ADD_VALUE)),
+						equipmentSlot);
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.max_health")).get(), (new AttributeModifier(
+						ResourceLocation.parse(("a_villagers_dream:" + "vibrant_health").toLowerCase(java.util.Locale.ENGLISH)),
+						(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2") - itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2") * 2),
+						AttributeModifier.Operation.ADD_VALUE)), equipmentSlot);
+			}
+			if ((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("emeraldQuality")).equals("Legendary")) {
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.attack_damage")).get(),
+						(new AttributeModifier(ResourceLocation.parse(("a_villagers_dream:" + "legendary_damage").toLowerCase(java.util.Locale.ENGLISH)),
+								(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier1")), AttributeModifier.Operation.ADD_VALUE)),
+						equipmentSlot);
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.max_health")).get(),
+						(new AttributeModifier(ResourceLocation.parse(("a_villagers_dream:" + "legendary_health").toLowerCase(java.util.Locale.ENGLISH)),
+								(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2")), AttributeModifier.Operation.ADD_VALUE)),
+						equipmentSlot);
+			}
+			if ((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("emeraldQuality")).equals("Colossal")) {
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.scale")).get(),
+						(new AttributeModifier(ResourceLocation.parse(("a_villagers_dream:" + "Colossal_scale").toLowerCase(java.util.Locale.ENGLISH)),
+								(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier1")), AttributeModifier.Operation.ADD_VALUE)),
+						equipmentSlot);
+				_event.addModifier(BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse("minecraft:generic.max_health")).get(),
+						(new AttributeModifier(ResourceLocation.parse(("a_villagers_dream:" + "Colossal_health").toLowerCase(java.util.Locale.ENGLISH)),
+								(double) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("modifier2")), AttributeModifier.Operation.ADD_VALUE)),
+						equipmentSlot);
 			}
 		}
 	}

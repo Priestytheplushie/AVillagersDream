@@ -2,10 +2,10 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "All in...",
-    "achievementDescription": "Invest 64 Emeralds into a Emerald Quality Upgrade",
+    "achievementName": "Startup Invester",
+    "achievementDescription": "Provide enough startup capital to see a real return. (200 Emeralds)",
     "achievementIcon": {
-      "value": "Blocks.EMERALD_BLOCK"
+      "value": "Blocks.EMERALD_ORE"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -15,9 +15,9 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardXP": 0,
-    "achievementType": "goal",
+    "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:StartupInvester"
+      "value": "CUSTOM:TheArtOfTheDeal"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }

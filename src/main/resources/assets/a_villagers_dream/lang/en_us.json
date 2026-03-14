@@ -173,5 +173,11 @@
   "advancements.the_art_of_the_deal.descr": "Obtain any item with an Emerald Quality",
   "advancements.the_art_of_the_deal.title": "The Art of the Deal",
   "advancements.all_in.title": "All in...",
-  "advancements.all_in.descr": "Invest 64 Emeralds into a Emerald Quality Upgrade"
+  "advancements.all_in.descr": "Invest 64 Emeralds into a Emerald Quality Upgrade",
+  "advancements.startup_invester.title": "Startup Invester",
+  "advancements.startup_invester.descr": "Provide enough startup capital to see a real return. (200 Emeralds)",
+  "advancements.venture_capitalist.title": "Venture Capitalist",
+  "advancements.venture_capitalist.descr": "Scale your operations and dominate the local market. (500 Emeralds)",
+  "advancements.the_emerald_whale.title": "The Emerald Whale",
+  "advancements.the_emerald_whale.descr": "Your wealth is so vast, you\u0027ve become the market itself..."
 }

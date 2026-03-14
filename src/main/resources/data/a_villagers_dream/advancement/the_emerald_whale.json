@@ -4,20 +4,20 @@
       "id": "minecraft:emerald_block"
     },
     "title": {
-      "translate": "advancements.all_in.title"
+      "translate": "advancements.the_emerald_whale.title"
     },
     "description": {
-      "translate": "advancements.all_in.descr"
+      "translate": "advancements.the_emerald_whale.descr"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "all_in_0": {
+    "the_emerald_whale_0": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "a_villagers_dream:startup_invester"
+  "parent": "a_villagers_dream:venture_capitalist"
 }

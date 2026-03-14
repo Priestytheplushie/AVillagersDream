@@ -2208,6 +2208,45 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "StartupInvester",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "startup_invester",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/startup_invester.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "VentureCapitalist",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "venture_capitalist",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/venture_capitalist.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "TheEmeraldWhale",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_emerald_whale",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/the_emerald_whale.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -2239,6 +2278,12 @@
       "name": "EmeraldDebt",
       "type": "number",
       "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "EmeraldsInvested",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],
@@ -2487,7 +2532,13 @@
       "advancements.the_art_of_the_deal.descr": "Obtain any item with an Emerald Quality",
       "advancements.the_art_of_the_deal.title": "The Art of the Deal",
       "advancements.all_in.title": "All in...",
-      "advancements.all_in.descr": "Invest 64 Emeralds into a Emerald Quality Upgrade"
+      "advancements.all_in.descr": "Invest 64 Emeralds into a Emerald Quality Upgrade",
+      "advancements.startup_invester.title": "Startup Invester",
+      "advancements.startup_invester.descr": "Provide enough startup capital to see a real return. (200 Emeralds)",
+      "advancements.venture_capitalist.title": "Venture Capitalist",
+      "advancements.venture_capitalist.descr": "Scale your operations and dominate the local market. (500 Emeralds)",
+      "advancements.the_emerald_whale.title": "The Emerald Whale",
+      "advancements.the_emerald_whale.descr": "Your wealth is so vast, you\u0027ve become the market itself..."
     }
   },
   "metadata": {
@@ -2546,7 +2597,7 @@
   "workspaceSettings": {
     "modid": "a_villagers_dream",
     "modName": "A Villager\u0027s Dream",
-    "version": "0.2.0-alpha",
+    "version": "0.3.0-dev",
     "description": "Discover the Emerald Revelation",
     "author": "Priesty \u0026 i7sky20",
     "websiteURL": "https://priesty.com",
@@ -2558,7 +2609,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.avillagersdream"
   },
   "mcreatorVersion": 202500345720

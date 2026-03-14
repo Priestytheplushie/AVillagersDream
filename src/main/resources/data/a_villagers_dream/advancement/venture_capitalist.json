@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:emerald_block"
+      "id": "minecraft:emerald"
     },
     "title": {
-      "translate": "advancements.all_in.title"
+      "translate": "advancements.venture_capitalist.title"
     },
     "description": {
-      "translate": "advancements.all_in.descr"
+      "translate": "advancements.venture_capitalist.descr"
     },
     "frame": "goal",
     "show_toast": true,
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "all_in_0": {
+    "venture_capitalist_0": {
       "trigger": "minecraft:impossible"
     }
   },

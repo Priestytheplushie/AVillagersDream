@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald_ore"
+    },
+    "title": {
+      "translate": "advancements.startup_invester.title"
+    },
+    "description": {
+      "translate": "advancements.startup_invester.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "startup_invester_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:the_art_of_the_deal"
+}

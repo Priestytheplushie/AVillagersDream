@@ -2,8 +2,8 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "All in...",
-    "achievementDescription": "Invest 64 Emeralds into a Emerald Quality Upgrade",
+    "achievementName": "The Emerald Whale",
+    "achievementDescription": "Your wealth is so vast, you've become the market itself...",
     "achievementIcon": {
       "value": "Blocks.EMERALD_BLOCK"
     },
@@ -15,9 +15,9 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardXP": 0,
-    "achievementType": "goal",
+    "achievementType": "challenge",
     "parent": {
-      "value": "CUSTOM:StartupInvester"
+      "value": "CUSTOM:VentureCapitalist"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }

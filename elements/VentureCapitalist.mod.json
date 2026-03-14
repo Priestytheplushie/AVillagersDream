@@ -2,10 +2,10 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "All in...",
-    "achievementDescription": "Invest 64 Emeralds into a Emerald Quality Upgrade",
+    "achievementName": "Venture Capitalist",
+    "achievementDescription": "Scale your operations and dominate the local market. (500 Emeralds)",
     "achievementIcon": {
-      "value": "Blocks.EMERALD_BLOCK"
+      "value": "Items.EMERALD"
     },
     "background": "Default",
     "disableDisplay": false,
