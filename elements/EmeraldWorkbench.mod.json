@@ -123,20 +123,17 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
-    "guiBoundTo": "RubyFurnaceGUI",
-    "openGUIOnRightClick": false,
-    "inventorySize": 5,
-    "inventoryStackSize": 99,
-    "inventoryDropWhenDestroyed": true,
+    "hasInventory": true,
+    "guiBoundTo": "EmeraldWorkbenchGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 3,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [
-      3,
-      4
+      2
     ],
     "inventoryInSlotIDs": [
-      0,
-      1,
       2
     ],
     "hasEnergyStorage": false,

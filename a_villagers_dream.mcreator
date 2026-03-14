@@ -1734,26 +1734,15 @@
       "registry_name": "emerald_workbench",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/avillagersdream/block/entity/EmeraldWorkbenchBlockEntity.java",
           "src/main/resources/data/a_villagers_dream/loot_table/blocks/emerald_workbench.json",
           "src/main/resources/assets/a_villagers_dream/models/block/emerald_workbench.json",
           "src/main/java/net/mcreator/avillagersdream/block/EmeraldWorkbenchBlock.java",
           "src/main/resources/assets/a_villagers_dream/models/item/emerald_workbench.json",
           "src/main/resources/assets/a_villagers_dream/blockstates/emerald_workbench.json"
         ]
-      }
-    },
-    {
-      "name": "TheCuttingEdge",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "the_cutting_edge",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/a_villagers_dream/advancement/the_cutting_edge.json"
-        ]
       },
-      "path": "~/Advancements"
+      "path": "~/Emerald Workbench"
     },
     {
       "name": "EmeraldWorkbenchRecipe",
@@ -1766,7 +1755,8 @@
           "src/main/resources/data/a_villagers_dream/recipe/emerald_workbench_recipe.json",
           "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_workbench_recipe.json"
         ]
-      }
+      },
+      "path": "~/Emerald Workbench"
     },
     {
       "name": "EmeraldArmor",
@@ -2015,6 +2005,209 @@
           "src/main/resources/data/a_villagers_dream/recipe/emerald_boots_recipe.json"
         ]
       }
+    },
+    {
+      "name": "EmeraldWorkbenchGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/network/EmeraldWorkbenchGUISlotMessage.java",
+          "src/main/java/net/mcreator/avillagersdream/world/inventory/EmeraldWorkbenchGUIMenu.java",
+          "src/main/java/net/mcreator/avillagersdream/network/EmeraldWorkbenchGUISliderMessage.java",
+          "src/main/java/net/mcreator/avillagersdream/client/gui/EmeraldWorkbenchGUIScreen.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "EmeraldWorkbenchSlider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_slider",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldWorkbenchSliderProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "EmeraldWorkbenchPotency",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_potency",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldWorkbenchPotencyProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "EmeraldWorkbenchSlot0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_slot_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldWorkbenchSlot0Procedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "EmeraldWorkbenchQualityDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_quality_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldWorkbenchQualityDisplayProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "GreenCollarWorker",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_collar_worker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/green_collar_worker.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldWorkbenchTransaction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_workbench_transaction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldWorkbenchTransactionProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "CalculateAttributeModifiers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calculate_attribute_modifiers",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/CalculateAttributeModifiersProcedure.java"
+        ]
+      },
+      "path": "~/Emerald Workbench"
+    },
+    {
+      "name": "TheArtOfTheDeal",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_art_of_the_deal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/the_art_of_the_deal.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "AllIn",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_in",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/all_in.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -2086,6 +2279,12 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~CUSTOM:EmeraldArmor.boots"
+    ],
+    "ITEMS:mod:eligible_equipment": [
+      "TAG:minecraft:swords",
+      "TAG:minecraft:axes",
+      "Items.TRIDENT",
+      "Items.MACE"
     ]
   },
   "tab_element_order": {
@@ -2235,8 +2434,6 @@
       "advancements.fog_of_war.title": "Fog of War",
       "advancements.fog_of_war.descr": "Strike a Scout while blinded by the Scout\u0027s potion.",
       "block.a_villagers_dream.emerald_workbench": "Emerald Workbench",
-      "advancements.the_cutting_edge.title": "The Cutting Edge",
-      "advancements.the_cutting_edge.descr": "Construct a Emerald Workbench for a Emeraldsmith",
       "item.a_villagers_dream.emerald_armor_helmet": "Emerald Helmet",
       "item.a_villagers_dream.emerald_armor_leggings": "Emerald Leggings",
       "item.a_villagers_dream.emerald_armor_boots": "Emerald Boots",
@@ -2277,7 +2474,20 @@
       "advancements.bankrupt.title": "Chapter 11: Bankruptcy",
       "advancements.bankrupt.descr": "Have your armor take damage because you were unable to pay your debt.",
       "advancements.deal_with_the_devil.title": "Deal with the Devil",
-      "advancements.deal_with_the_devil.descr": "Accumulate 500 or more Emerald Debt in a single 15-second cycle."
+      "advancements.deal_with_the_devil.descr": "Accumulate 500 or more Emerald Debt in a single 15-second cycle.",
+      "gui.a_villagers_dream.emerald_workbench_gui.Investment_prefix": "Invest ",
+      "gui.a_villagers_dream.emerald_workbench_gui.label_emerald_workbench": "Emerald Workbench",
+      "gui.a_villagers_dream.emerald_workbench_gui.label_quality_bulky": "Quality: Bulky",
+      "gui.a_villagers_dream.emerald_workbench_gui.label_investment": "Investment",
+      "gui.a_villagers_dream.emerald_workbench_gui.label_potency_low": "Potency: Low",
+      "gui.a_villagers_dream.emerald_workbench_gui.Investment_suffix": " Gems",
+      "advancements.green_collar_worker.title": "Green Collar Worker",
+      "advancements.green_collar_worker.descr": "Construct a Emerald Workbench to create new opportunities for you and your local Emeraldsmith",
+      "gui.a_villagers_dream.emerald_workbench_gui.tooltip_empty": "",
+      "advancements.the_art_of_the_deal.descr": "Obtain any item with an Emerald Quality",
+      "advancements.the_art_of_the_deal.title": "The Art of the Deal",
+      "advancements.all_in.title": "All in...",
+      "advancements.all_in.descr": "Invest 64 Emeralds into a Emerald Quality Upgrade"
     }
   },
   "metadata": {
@@ -2300,6 +2510,7 @@
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModTabs.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModModels.java",
       "src/main/java/net/mcreator/avillagersdream/network/AVillagersDreamModVariables.java"
     ]
   },
@@ -2324,6 +2535,10 @@
       },
       {
         "name": "Emerald Armor",
+        "children": []
+      },
+      {
+        "name": "Emerald Workbench",
         "children": []
       }
     ]

@@ -2,8 +2,8 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "The Cutting Edge",
-    "achievementDescription": "Construct a Emerald Workbench for a Emeraldsmith",
+    "achievementName": "Green Collar Worker",
+    "achievementDescription": "Construct a Emerald Workbench to create new opportunities for you and your local Emeraldsmith",
     "achievementIcon": {
       "value": "CUSTOM:EmeraldWorkbench"
     },
@@ -15,7 +15,7 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardXP": 0,
-    "achievementType": "task",
+    "achievementType": "goal",
     "parent": {
       "value": "CUSTOM:EmeraldRefinery"
     },

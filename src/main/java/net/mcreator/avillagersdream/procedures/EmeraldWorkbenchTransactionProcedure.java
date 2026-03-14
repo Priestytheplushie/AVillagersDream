@@ -1,0 +1,76 @@
+package net.mcreator.avillagersdream.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
+
+import net.mcreator.avillagersdream.init.AVillagersDreamModMenus;
+
+public class EmeraldWorkbenchTransactionProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		ItemStack current_item = ItemStack.EMPTY;
+		double slotcount = 0;
+		slotcount = getAmountInGUISlot(entity, 1);
+		if (entity instanceof Player _player && _player.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu) {
+			_menu.getSlots().get(1).remove((int) ((entity instanceof Player _entity1 && _entity1.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu1) ? _menu1.getMenuState(2, "Investment", 0.0) : 0.0));
+			_menu.getSlots().get(0).remove(1);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (world instanceof Level _level) {
+			if (!_level.isClientSide()) {
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.NEUTRAL, 1, (float) 0.3);
+			} else {
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.use")), SoundSource.NEUTRAL, 1, (float) 0.3, false);
+			}
+		}
+		if (world instanceof ServerLevel _level)
+			_level.addFreshEntity(new ExperienceOrb(_level, x, (y + 1), z, (int) slotcount));
+		if (!(entity instanceof ServerPlayer _plr6 && _plr6.level() instanceof ServerLevel && _plr6.getAdvancements().getOrStartProgress(_plr6.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:the_art_of_the_deal"))).isDone())) {
+			if (entity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:the_art_of_the_deal"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
+		}
+		if (!(entity instanceof ServerPlayer _plr8 && _plr8.level() instanceof ServerLevel && _plr8.getAdvancements().getOrStartProgress(_plr8.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:all_in"))).isDone())
+				&& slotcount == 64) {
+			if (entity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:all_in"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
+		}
+	}
+
+	private static int getAmountInGUISlot(Entity entity, int sltid) {
+		if (entity instanceof Player player && player.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor menuAccessor) {
+			ItemStack stack = menuAccessor.getSlots().get(sltid).getItem();
+			if (stack != null)
+				return stack.getCount();
+		}
+		return 0;
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#minecraft:axes",
+      "required": false
+    },
+    "minecraft:trident",
+    {
+      "id": "#minecraft:swords",
+      "required": false
+    },
+    "minecraft:mace"
+  ]
+}

@@ -4,18 +4,18 @@
       "id": "a_villagers_dream:emerald_workbench"
     },
     "title": {
-      "translate": "advancements.the_cutting_edge.title"
+      "translate": "advancements.green_collar_worker.title"
     },
     "description": {
-      "translate": "advancements.the_cutting_edge.descr"
+      "translate": "advancements.green_collar_worker.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "the_cutting_edge_0": {
+    "green_collar_worker_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

@@ -45,9 +45,6 @@
     "onEntityHitWith": {
       "name": "RubyLivingEntityIsHitWithItem"
     },
-    "onDroppedByPlayer": {
-      "name": "RubyBarteringProcedure"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
