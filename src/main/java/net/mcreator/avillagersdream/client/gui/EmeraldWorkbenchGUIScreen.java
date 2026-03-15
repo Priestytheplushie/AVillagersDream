@@ -84,7 +84,7 @@ public class EmeraldWorkbenchGUIScreen extends AbstractContainerScreen<EmeraldWo
 		guiGraphics.drawString(this.font, Component.translatable("gui.a_villagers_dream.emerald_workbench_gui.label_emerald_workbench"), 41, 5, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.a_villagers_dream.emerald_workbench_gui.label_investment"), 64, 22, -12829636, false);
 		guiGraphics.drawString(this.font, EmeraldWorkbenchPotencyProcedure.execute(entity), 67, 58, -12829636, false);
-		guiGraphics.drawString(this.font, EmeraldWorkbenchQualityDisplayProcedure.execute(entity), 65, 69, -12829636, false);
+		guiGraphics.drawString(this.font, EmeraldWorkbenchQualityDisplayProcedure.execute(entity), 67, 69, -12829636, false);
 	}
 
 	@Override

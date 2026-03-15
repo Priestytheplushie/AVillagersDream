@@ -2597,7 +2597,7 @@
   "workspaceSettings": {
     "modid": "a_villagers_dream",
     "modName": "A Villager\u0027s Dream",
-    "version": "0.3.0-dev",
+    "version": "0.3.0-alpha",
     "description": "Discover the Emerald Revelation",
     "author": "Priesty \u0026 i7sky20",
     "websiteURL": "https://priesty.com",
@@ -2609,6 +2609,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.avillagersdream"
   },
   "mcreatorVersion": 202500345720
