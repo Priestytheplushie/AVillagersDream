@@ -17,8 +17,12 @@ public class EmeraldWorkbenchSliderProcedure {
 		if (entity == null)
 			return;
 		double gemAmount = 0;
+		if (entity instanceof Player _player && _player.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu) {
+			_menu.getSlots().get(2).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
 		gemAmount = itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount();
-		if (((entity instanceof Player _entity1 && _entity1.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu1) ? _menu1.getMenuState(2, "Investment", 0.0) : 0.0) > gemAmount) {
+		if (((entity instanceof Player _entity2 && _entity2.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu2) ? _menu2.getMenuState(2, "Investment", 0.0) : 0.0) > gemAmount) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu)
 				_menu.sendMenuStateUpdate(_player, 2, "Investment", gemAmount, true);
 		}

@@ -216,7 +216,7 @@ public class EmeraldWorkbenchSlot0Procedure {
 						{
 							final String _tagName = "modifier1";
 							final double _tagValue = (Math
-									.round((((entity instanceof Player _entity70 && _entity70.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu70) ? _menu70.getMenuState(2, "Investment", 0.0) : 0.0) / 40) * 100) / 100d);
+									.round((((entity instanceof Player _entity70 && _entity70.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu70) ? _menu70.getMenuState(2, "Investment", 0.0) : 0.0) / 24) * 100) / 100d);
 							CustomData.update(DataComponents.CUSTOM_DATA, previewStack, tag -> tag.putDouble(_tagName, _tagValue));
 						}
 						{
