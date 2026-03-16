@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "a_villagers_dream:emerald_nugget"
+    },
+    "title": {
+      "translate": "advancements.pay_to_play.title"
+    },
+    "description": {
+      "translate": "advancements.pay_to_play.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pay_to_play_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:market_volatility"
+}

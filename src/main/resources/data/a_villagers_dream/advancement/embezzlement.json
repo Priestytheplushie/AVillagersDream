@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald_block"
+    },
+    "title": {
+      "translate": "advancements.embezzlement.title"
+    },
+    "description": {
+      "translate": "advancements.embezzlement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "embezzlement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:over_budget"
+}

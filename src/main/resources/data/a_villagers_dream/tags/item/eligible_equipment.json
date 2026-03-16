@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "a_villagers_dream:emerald_mace",
     {
       "id": "#minecraft:axes",
       "required": false

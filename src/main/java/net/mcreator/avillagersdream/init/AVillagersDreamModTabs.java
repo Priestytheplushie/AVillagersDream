@@ -40,6 +40,7 @@ public class AVillagersDreamModTabs {
 				tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_LEGGINGS.get());
 				tabData.accept(AVillagersDreamModItems.EMERALD_ARMOR_BOOTS.get());
 				tabData.accept(AVillagersDreamModItems.SCOUT_SPAWN_EGG.get());
+				tabData.accept(AVillagersDreamModItems.EMERALD_MACE.get());
 			}).build());
 
 	@SubscribeEvent
@@ -64,6 +65,7 @@ public class AVillagersDreamModTabs {
 			tabData.accept(AVillagersDreamModItems.EMERALD_PICKAXE.get());
 			tabData.accept(AVillagersDreamModItems.EMERALD_HOE.get());
 			tabData.accept(AVillagersDreamModItems.EMERALD_SHOVEL.get());
+			tabData.accept(AVillagersDreamModItems.EMERALD_MACE.get());
 		}
 	}
 }

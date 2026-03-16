@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:dragon_egg"
+    },
+    "title": {
+      "translate": "advancements.pay_to_win.title"
+    },
+    "description": {
+      "translate": "advancements.pay_to_win.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pay_to_win_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "a_villagers_dream:market_volatility"
+}

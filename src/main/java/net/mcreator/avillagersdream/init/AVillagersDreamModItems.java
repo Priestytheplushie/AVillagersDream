@@ -36,6 +36,7 @@ public class AVillagersDreamModItems {
 	public static final DeferredItem<Item> EMERALD_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> EMERALD_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> EMERALD_ARMOR_BOOTS;
+	public static final DeferredItem<Item> EMERALD_MACE;
 	static {
 		EMERALD_SWORD = REGISTRY.register("emerald_sword", EmeraldSwordItem::new);
 		EMERALD_PICKAXE = REGISTRY.register("emerald_pickaxe", EmeraldPickaxeItem::new);
@@ -56,6 +57,7 @@ public class AVillagersDreamModItems {
 		EMERALD_ARMOR_CHESTPLATE = REGISTRY.register("emerald_armor_chestplate", EmeraldArmorItem.Chestplate::new);
 		EMERALD_ARMOR_LEGGINGS = REGISTRY.register("emerald_armor_leggings", EmeraldArmorItem.Leggings::new);
 		EMERALD_ARMOR_BOOTS = REGISTRY.register("emerald_armor_boots", EmeraldArmorItem.Boots::new);
+		EMERALD_MACE = REGISTRY.register("emerald_mace", EmeraldMaceItem::new);
 	}
 
 	// Start of user code block custom items

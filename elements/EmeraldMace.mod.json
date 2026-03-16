@@ -1,0 +1,54 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "emerald_mace",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Emerald Mace",
+    "specialInformation": {
+      "fixedValue": [
+        "§7Each slot with any amount of §aEmeralds",
+        "§7adds §a+1§7 damage. Striking a mob destroys",
+        "§71 §aEmerald§7 from a slot. This weapon cannot",
+        "§7perform a smash attack."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      },
+      {
+        "value": "CUSTOM:AVillagersDream"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 0.6,
+    "enchantability": 15,
+    "damageVsEntity": 6.0,
+    "usageCount": 500,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:EmeraldIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "EmeraldMaceLivingEntityIsHitWithTool"
+    }
+  }
+}

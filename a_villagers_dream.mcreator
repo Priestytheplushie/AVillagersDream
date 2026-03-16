@@ -2247,6 +2247,161 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "EmeraldMace",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/a_villagers_dream/models/item/emerald_mace.json",
+          "src/main/java/net/mcreator/avillagersdream/item/EmeraldMaceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldMaceLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_mace_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/EmeraldMaceLivingEntityIsHitWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MarketVolatility",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "market_volatility",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/market_volatility.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "OverBudget",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "over_budget",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/over_budget.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PayToWin",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pay_to_win",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/pay_to_win.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Embezzlement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "embezzlement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/embezzlement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PayToPlay",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pay_to_play",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/advancement/pay_to_play.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "KillChecker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_checker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/avillagersdream/procedures/KillCheckerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldMaceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_mace_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/a_villagers_dream/recipe/emerald_mace_recipe.json",
+          "src/main/resources/data/a_villagers_dream/advancement/recipes/emerald_mace_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2293,6 +2448,7 @@
       "~CUSTOM:EmeraldSword"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:EmeraldMace",
       "~CUSTOM:EmeraldPickaxe"
     ],
     "ITEMS:minecraft:axes": [
@@ -2329,7 +2485,12 @@
       "TAG:minecraft:swords",
       "TAG:minecraft:axes",
       "Items.TRIDENT",
-      "Items.MACE"
+      "Items.MACE",
+      "CUSTOM:EmeraldMace"
+    ],
+    "ITEMS:minecraft:enchantable/mace": [
+      "Items.MACE",
+      "CUSTOM:EmeraldMace"
     ]
   },
   "tab_element_order": {
@@ -2337,7 +2498,8 @@
       "EmeraldAxe",
       "EmeraldPickaxe",
       "EmeraldHoe",
-      "EmeraldShovel"
+      "EmeraldShovel",
+      "EmeraldMace"
     ],
     "CUSTOM:AVillagersDream": [
       "EmeraldSword",
@@ -2353,7 +2515,8 @@
       "DisguisedIllager",
       "EmeraldWorkbench",
       "EmeraldArmor",
-      "Scout"
+      "Scout",
+      "EmeraldMace"
     ]
   },
   "language_map": {
@@ -2375,7 +2538,7 @@
       "item.a_villagers_dream.emerald_axe.description_2": "§atriples §7while in a Village and is §a100%",
       "item.a_villagers_dream.emerald_axe.description_3": "§7with §aHero of the Village§7. Stripping",
       "item.a_villagers_dream.emerald_axe.description_4": "§7logs costs a high amount of durability.",
-      "item.a_villagers_dream.emerald_upgrade.description_3": " §9Iron Equipment",
+      "item.a_villagers_dream.emerald_upgrade.description_3": " §9Iron Equipment \u0026 Mace",
       "item.a_villagers_dream.emerald_upgrade.description_2": "§7Applies to:",
       "item.a_villagers_dream.emerald_upgrade.description_5": "§9 Emerald",
       "item.a_villagers_dream.emerald_upgrade.description_4": "§7Ingredients:",
@@ -2538,7 +2701,23 @@
       "advancements.venture_capitalist.title": "Venture Capitalist",
       "advancements.venture_capitalist.descr": "Scale your operations and dominate the local market. (500 Emeralds)",
       "advancements.the_emerald_whale.title": "The Emerald Whale",
-      "advancements.the_emerald_whale.descr": "Your wealth is so vast, you\u0027ve become the market itself..."
+      "advancements.the_emerald_whale.descr": "Your wealth is so vast, you\u0027ve become the market itself...",
+      "item.a_villagers_dream.emerald_mace": "Emerald Mace",
+      "item.a_villagers_dream.emerald_mace.description_2": "§71 §aEmerald§7 from a slot. This weapon cannot",
+      "item.a_villagers_dream.emerald_mace.description_1": "§7adds §a+1§7 damage. Striking a mob destroys",
+      "item.a_villagers_dream.emerald_mace.description_0": "§7Each slot with any amount of §aEmeralds",
+      "advancements.market_volatility.descr": "Upgrade your Mace into a Emerald Mace",
+      "advancements.market_volatility.title": "Market Volatility",
+      "advancements.over_budget.descr": "Deal 30+ damage in a single strike with the Emerald Mace.",
+      "advancements.over_budget.title": "Over Budget",
+      "advancements.pay_to_win.descr": "Defeat the Ender Dragon, Wither, or Warden with a Emerald Mace",
+      "advancements.pay_to_win.title": "Pay-to-Win",
+      "advancements.embezzlement.descr": "Strike a Mob with a Mace while your inventory is full of Emeralds",
+      "advancements.embezzlement.title": "Embezzlement",
+      "advancements.pay_to_play.title": "Pay-to-Play",
+      "advancements.pay_to_play.descr": "Consume a Emerald while attacking with a Emerald Mace",
+      "item.a_villagers_dream.emerald_upgrade.description_6": "§9 Emerald",
+      "item.a_villagers_dream.emerald_mace.description_3": "§7perform a smash attack."
     }
   },
   "metadata": {
