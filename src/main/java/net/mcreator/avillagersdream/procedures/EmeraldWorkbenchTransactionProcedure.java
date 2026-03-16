@@ -58,7 +58,7 @@ public class EmeraldWorkbenchTransactionProcedure {
 			}
 		}
 		if (!(entity instanceof ServerPlayer _plr9 && _plr9.level() instanceof ServerLevel && _plr9.getAdvancements().getOrStartProgress(_plr9.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:all_in"))).isDone())
-				&& slotcount == 64) {
+				&& ((entity instanceof Player _entity10 && _entity10.containerMenu instanceof AVillagersDreamModMenus.MenuAccessor _menu10) ? _menu10.getMenuState(2, "Investment", 0.0) : 0.0) == 64) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:all_in"));
 				if (_adv != null) {
@@ -70,7 +70,7 @@ public class EmeraldWorkbenchTransactionProcedure {
 				}
 			}
 		}
-		if (!(entity instanceof ServerPlayer _plr11 && _plr11.level() instanceof ServerLevel && _plr11.getAdvancements().getOrStartProgress(_plr11.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:startup_invester"))).isDone())
+		if (!(entity instanceof ServerPlayer _plr12 && _plr12.level() instanceof ServerLevel && _plr12.getAdvancements().getOrStartProgress(_plr12.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:startup_invester"))).isDone())
 				&& entity.getData(AVillagersDreamModVariables.PLAYER_VARIABLES).EmeraldsInvested >= 200) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:startup_invester"));
@@ -83,7 +83,7 @@ public class EmeraldWorkbenchTransactionProcedure {
 				}
 			}
 		}
-		if (!(entity instanceof ServerPlayer _plr13 && _plr13.level() instanceof ServerLevel && _plr13.getAdvancements().getOrStartProgress(_plr13.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:venture_capitalist"))).isDone())
+		if (!(entity instanceof ServerPlayer _plr14 && _plr14.level() instanceof ServerLevel && _plr14.getAdvancements().getOrStartProgress(_plr14.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:venture_capitalist"))).isDone())
 				&& entity.getData(AVillagersDreamModVariables.PLAYER_VARIABLES).EmeraldsInvested >= 500) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:venture_capitalist"));
@@ -96,7 +96,7 @@ public class EmeraldWorkbenchTransactionProcedure {
 				}
 			}
 		}
-		if (!(entity instanceof ServerPlayer _plr15 && _plr15.level() instanceof ServerLevel && _plr15.getAdvancements().getOrStartProgress(_plr15.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:the_emerald_whale"))).isDone())
+		if (!(entity instanceof ServerPlayer _plr16 && _plr16.level() instanceof ServerLevel && _plr16.getAdvancements().getOrStartProgress(_plr16.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:the_emerald_whale"))).isDone())
 				&& entity.getData(AVillagersDreamModVariables.PLAYER_VARIABLES).EmeraldsInvested >= 1000) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("a_villagers_dream:the_emerald_whale"));
