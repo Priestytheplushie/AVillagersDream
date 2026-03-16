@@ -27,19 +27,21 @@ jobs:
         run: |
           echo "date=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
           
-          # Improved commit detection logic
           BEFORE="${{ github.event.before }}"
-          # If it's a new branch or manual run, compare against previous commit
+          # If it's a new branch or manual run, we look at the last commit
           if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || [ -z "$BEFORE" ]; then
             RANGE="HEAD~1..HEAD"
           else
             RANGE="$BEFORE..HEAD"
           fi
           
-          # Count commits that aren't just chores/docs
+          # Count commits that aren't chores/docs
           VALID_COMMITS=$(git log --pretty=format:"%s" "$RANGE" | grep -vE "^(chore|docs|ci|test):" | wc -l || echo 0)
           
-          if [ "$VALID_COMMITS" -eq "0" ] && [ "${{ github.event_name }}" == "push" ]; then
+          # If manual trigger, always run. If push, check for valid commits.
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          elif [ "$VALID_COMMITS" -eq "0" ]; then
             echo "should_run=false" >> $GITHUB_OUTPUT
           else
             echo "should_run=true" >> $GITHUB_OUTPUT
@@ -63,34 +65,15 @@ jobs:
         if: steps.vars.outputs.should_run == 'true'
         run: |
           mkdir -p build/dist
+          # Attempt to find the versioned jar, fallback to any jar if not found
           cp build/libs/*[0-9].jar build/dist/AVillagersDream-nightly.jar || cp build/libs/*.jar build/dist/AVillagersDream-nightly.jar
-
-      - name: Generate Smart Changelog
-        if: steps.vars.outputs.should_run == 'true'
-        id: build_changelog
-        uses: mikepenz/release-changelog-builder-action@v4
-        with:
-          configurationJson: |
-            {
-              "categories": [
-                { "title": "## ⚠️ Breaking Changes", "labels": [], "commit_prefix": "feat!:" },
-                { "title": "## ⚠️ Breaking Changes", "labels": [], "commit_prefix": "fix!:" },
-                { "title": "## 🚀 New Features", "labels": [], "commit_prefix": "feat:" },
-                { "title": "## 🐛 Bug Fixes", "labels": [], "commit_prefix": "fix:" },
-                { "title": "## 🎨 Visuals & Assets", "labels": [], "commit_prefix": "" }
-              ],
-              "ignore_labels": ["chore", "ci", "docs"],
-              "template": "#CHANGELOG"
-            }
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Refresh Nightly Tag
         if: steps.vars.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git tag -f nightly # Use -f (force) to overwrite locally
+          git tag -f nightly
           git push origin :refs/tags/nightly || true
           git push origin nightly
 
@@ -100,11 +83,10 @@ jobs:
         with:
           tag_name: nightly
           name: "🌙 Nightly Build - ${{ steps.vars.outputs.date }}"
+          generate_release_notes: true
           body: |
             ### ⚠️ Experimental Build
             This build is automated and contains unpolished features. Use at your own risk!
-            
-            ${{ steps.build_changelog.outputs.changelog }}
             
             ---
             *Built from commit: ${{ github.sha }}*
