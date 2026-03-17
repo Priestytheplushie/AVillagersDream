@@ -20,10 +20,10 @@
     },
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:AVillagersDream"
       },
       {
-        "value": "CUSTOM:AVillagersDream"
+        "value": "COMBAT"
       }
     ],
     "efficiency": 4.0,

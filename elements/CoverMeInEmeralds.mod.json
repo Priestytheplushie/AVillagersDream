@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Cover Me In Emeralds",
+    "achievementName": "Cover Me in Emeralds",
     "achievementDescription": "Equip a full set of Emerald Armor.",
     "achievementIcon": {
       "value": "CUSTOM:EmeraldArmor.body"
