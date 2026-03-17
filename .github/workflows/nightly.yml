@@ -25,20 +25,40 @@ jobs:
       - name: Set Runtime Variables
         id: vars
         run: |
-          echo "date=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
+          # 1. Basics
+          echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
           
+          # 2. Extract Base Version from TOML 
+          BASE_VER=$(grep 'version=' src/main/resources/META-INF/neoforge.mods.toml | head -n 1 | cut -d'"' -f2)
+          FULL_VER="${BASE_VER}+nightly.$(date +'%Y.%m.%d').$(git rev-parse --short HEAD)"
+          echo "full_version=$FULL_VER" >> $GITHUB_OUTPUT
+
+          # 3. Smart Changelog (only commits since last nightly)
+          # We check if the nightly tag exists on the remote first
+          git fetch --tags
+          if git rev-parse nightly >/dev/null 2>&1; then
+            CHANGELOG=$(git log nightly..HEAD --pretty=format:"* (%h) %s")
+          fi
+          
+          if [ -z "$CHANGELOG" ]; then
+            CHANGELOG="* Internal build refresh or manual trigger (no new commits)."
+          fi
+          
+          # Use a heredoc to handle multi-line changelogs safely
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          # 4. Standard Filter Logic
           BEFORE="${{ github.event.before }}"
-          # If it's a new branch or manual run, we look at the last commit
           if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || [ -z "$BEFORE" ]; then
             RANGE="HEAD~1..HEAD"
           else
             RANGE="$BEFORE..HEAD"
           fi
-          
-          # Count commits that aren't chores/docs
           VALID_COMMITS=$(git log --pretty=format:"%s" "$RANGE" | grep -vE "^(chore|docs|ci|test):" | wc -l || echo 0)
           
-          # If manual trigger, always run. If push, check for valid commits.
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             echo "should_run=true" >> $GITHUB_OUTPUT
           elif [ "$VALID_COMMITS" -eq "0" ]; then
@@ -55,43 +75,56 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
 
+      - name: Inject Nightly Version
+        if: steps.vars.outputs.should_run == 'true'
+        run: |
+          VERSION="${{ steps.vars.outputs.full_version }}"
+          # Update build.gradle version [cite: 3]
+          sed -i "s/^version = .*/version = '$VERSION'/" build.gradle
+          # Update neoforge.mods.toml version 
+          sed -i "/\[\[mods\]\]/,/displayName/ s/version=\".*\"/version=\"$VERSION\"/" src/main/resources/META-INF/neoforge.mods.toml
+
       - name: Build with Gradle
         if: steps.vars.outputs.should_run == 'true'
         run: |
           chmod +x gradlew
-          ./gradlew build
+          ./gradlew build --no-configuration-cache
 
       - name: Prepare Artifacts
         if: steps.vars.outputs.should_run == 'true'
         run: |
           mkdir -p build/dist
-          # Attempt to find the versioned jar, fallback to any jar if not found
-          cp build/libs/*[0-9].jar build/dist/AVillagersDream-nightly.jar || cp build/libs/*.jar build/dist/AVillagersDream-nightly.jar
+          rm -f build/dist/*.jar
+          cp build/libs/*.jar build/dist/AVillagersDream-nightly.jar
 
-      - name: Refresh Nightly Tag
+      - name: Refresh Nightly Tag & Release (GH CLI)
         if: steps.vars.outputs.should_run == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git tag -f nightly
-          git push origin :refs/tags/nightly || true
-          git push origin nightly
 
-      - name: Update Nightly Release
-        if: steps.vars.outputs.should_run == 'true'
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: nightly
-          name: "🌙 Nightly Build - ${{ steps.vars.outputs.date }}"
-          generate_release_notes: true
-          body: |
-            ### ⚠️ Experimental Build
-            This build is automated and contains unpolished features. Use at your own risk!
-            
+          # Sync tag
+          git tag -f nightly
+          git push origin nightly --force
+
+          # Nuke existing to clear duplicates
+          gh release delete nightly --yes || true
+          
+          # Create professional release
+          gh release create nightly build/dist/AVillagersDream-nightly.jar \
+            --title "🌙 Nightly Build - ${{ steps.vars.outputs.date }}" \
+            --notes "> [!WARNING]
+            > **Experimental Build:** This is an automated build from the \`main\` branch. It may contain world-breaking bugs. **Back up your saves!**
+
+            ### 🛠️ New Changes in this Build
+            ${{ steps.vars.outputs.changelog }}
+
             ---
-            *Built from commit: ${{ github.sha }}*
-          prerelease: true
-          files: build/dist/AVillagersDream-nightly.jar
-          make_latest: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            **Build Info**
+            * **Version:** \`${{ steps.vars.outputs.full_version }}\`
+            * **Commit:** [\`${{ github.sha }}\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
+            * **Compare:** [Changes since last nightly](${{ github.server_url }}/${{ github.repository }}/compare/nightly@{1}...nightly)
+            * **Timestamp:** $(date -u)" \
+            --prerelease
