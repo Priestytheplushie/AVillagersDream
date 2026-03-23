@@ -2721,26 +2721,26 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModScreens.java",
-      "src/main/java/net/mcreator/avillagersdream/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModMenus.java",
+      "src/main/java/net/mcreator/avillagersdream/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModScreens.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModFuels.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModMobEffects.java",
-      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModVillagerProfessions.java",
       "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModVillagerProfessions.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModTrades.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModBlocks.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModBlockEntities.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModItems.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModEntities.java",
       "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModEntityRenderers.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModTabs.java",
+      "src/main/java/net/mcreator/avillagersdream/network/AVillagersDreamModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/avillagersdream/AVillagersDreamMod.java",
       "src/main/resources/META-INF/enumextensions.json",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModTabs.java",
-      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModModels.java",
-      "src/main/java/net/mcreator/avillagersdream/network/AVillagersDreamModVariables.java"
+      "src/main/java/net/mcreator/avillagersdream/init/AVillagersDreamModModels.java"
     ]
   },
   "foldersRoot": {

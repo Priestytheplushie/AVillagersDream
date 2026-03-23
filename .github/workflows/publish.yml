@@ -1,0 +1,48 @@
+name: Publish to Modrinth
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  upload:
+    if: "!contains(github.event.release.tag_name, 'nightly')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      - name: Clean Release Notes
+        id: clean_notes
+        run: |
+          # Grabs everything before "Full Changelog", deletes the "Full Changelog" line itself, 
+          # and appends a clean link to the GitHub release.
+          CLEAN_BODY=$(echo "${{ github.event.release.body }}" | sed '/Full Changelog/q' | sed '$d')
+          echo "body<<EOF" >> $GITHUB_OUTPUT
+          echo "$CLEAN_BODY" >> $GITHUB_OUTPUT
+          echo -e "\n\n[View Full Changelog on GitHub](${{ github.event.release.html_url }})" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Publish to Modrinth
+        uses: kirby-project/publish-mod-action@v2
+        with:
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-id: '3qgNZRxT' 
+          version-name: '${{ github.event.release.name }}'
+          version-number: '${{ github.event.release.tag_name }}'
+          changelog: '${{ steps.clean_notes.outputs.body }}'
+          files: |
+            build/libs/!(*-sources|*-dev|*-shadow).jar
+          loaders: |
+            neoforge
+          game-versions: |
+            1.21.1
